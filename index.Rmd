@@ -154,6 +154,8 @@ T2 %>% flextable() %>%
   width(j=1:5, width = c(1, .8, .8, .8, .8)) %>% 
   theme_zebra() 
   
-
-
 ```
+
+
+\newpage
+# References
