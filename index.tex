@@ -1,0 +1,1215 @@
+\documentclass[]{elsarticle} %review=doublespace preprint=single 5p=2 column
+%%% Begin My package additions %%%%%%%%%%%%%%%%%%%
+\usepackage[hyphens]{url}
+
+  \journal{Creativity and Innovation Management} % Sets Journal name
+
+
+\usepackage{lineno} % add
+  \linenumbers % turns line numbering on
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\usepackage{graphicx}
+\usepackage{booktabs} % book-quality tables
+%%%%%%%%%%%%%%%% end my additions to header
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \usepackage{fontspec}
+  \ifxetex
+    \usepackage{xltxtra,xunicode}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\bibliographystyle{elsarticle-harv}
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={Exploring team roles for social innovation labs: toward a competence-based self-assessment approach},
+            colorlinks=true,
+            urlcolor=blue,
+            linkcolor=blue,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+
+\setcounter{secnumdepth}{5}
+% Pandoc toggle for numbering sections (defaults to be off)
+
+% Pandoc citation processing
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+% for Pandoc 2.8 to 2.10.1
+\newenvironment{cslreferences}%
+  {}%
+  {\par}
+% For Pandoc 2.11+
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc} % for calculating minipage widths
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+% Pandoc header
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{colortbl}
+\usepackage{hhline}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{hyperref}
+
+
+
+\begin{document}
+\begin{frontmatter}
+
+  \title{Exploring team roles for social innovation labs: toward a
+competence-based self-assessment approach}
+    \author[ERPI,UN]{Ferney Osorio}
+   \ead{ferney.osorio-bustamante@univ-lorraine.fr} 
+    \author[ERPI]{Fabio A. Cruz Sanchez}
+  
+    \author[ERPI]{Laurent Dupont}
+  
+    \author[ERPI]{Mauricio Camargo}
+  
+      \address[ERPI]{Université de Lorraine - ERPI -F-54000, Nancy,
+France,}
+    \address[UN]{Departamento de Ingeniería de Sistemas e Industrial,
+Universidad Nacional de Colombia, Bogotá, Colombia}
+      \cortext[1]{Corresponding Author}
+  
+  \begin{abstract}
+  Recently, there has been a great interest in the development of
+  innovations labs as intermediate means to fostering social innovative
+  solutions to wicked problems. However, understanding how lab teams are
+  assembled including the underlying competences and main roles inside
+  of these organizational structures is still yet to be addressed. This
+  aspect is of paramount importance at the early-design phase to foster
+  the future development and consolidation of such initiatives. A
+  competence-based role model is proposed as a basis for guiding the
+  conformation of social innovation lab teams. The model has been
+  structured from (1) a set of 14 competences for social innovation labs
+  retrieved from the literature, (2) a comparison of 7 frameworks of
+  innovation team roles and (3) authors experience. The proposed model
+  is then operationalized through a self-assessment approach composed of
+  an online questionnaire and a retrospective workshop aiming to allow
+  team members to position themselves in terms of the potential role
+  that they could perform for their team but also to elicit improvement
+  strategies. The self-assessment methodology is then applied among 10
+  Latin American nascent social innovation lab teams with focus on
+  climate change challenges. Insights and implications of this
+  exploratory study for both researchers and practitioners are then
+  discussed.
+  \end{abstract}
+   \begin{keyword} innovation lab, social innovation, innovation team
+roles, innovation competences, self-assessment\end{keyword}
+ \end{frontmatter}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+Today's most critical challenges demand systemic ways to tackle them.
+Climate change, environmental degradation, health crisis, education
+inequalities, and employment and poverty reduction are some examples of
+those wicked problems characterized by their complexity, their
+interdependencies and their context specificity
+(\protect\hyperlink{ref-Zivkovic2018}{Zivkovic, 2018}). Social
+Innovation (SI) then emerges as a research strand for not only helping
+to understand these societal issues but to facilitate the development of
+systemic strategies toward a transformative change of social practices
+in order to solve social problems and meeting local demands
+(\protect\hyperlink{ref-Strasser2019}{Strasser, Kraker, \& Kemp, 2019}).
+
+In particular, the notion of SI Labs has recently become a subject of
+interest in the literature. SI labs emerge as an approach to keep up
+with increasing changes and accumulating challenges that society deals
+with and where more conventional approaches relying solely on
+techno-centric approaches fall short
+(\protect\hyperlink{ref-Jezierski2014}{Jezierski et al., 2014};
+\protect\hyperlink{ref-Westley2015}{Westley et al., 2015}). Innovation
+labs are defined as semi-autonomous organizations dedicated to
+facilitate innovation processes by allowing multi-stakeholders groups to
+interact in open collaboration with the purpose of creating and
+prototyping solutions to systemic challenges while strengthening
+people's innovative and technological competences
+(\protect\hyperlink{ref-Gryszkiewicz2016}{Gryszkiewicz, Lykourentzou, \&
+Toivonen, 2016}; \protect\hyperlink{ref-Lewis2005}{M. Lewis \& Moultrie,
+2005}; \protect\hyperlink{ref-Zivkovic2018}{Zivkovic, 2018}). In this
+sense, SI labs act as cross-pollinators of knowledge, creating dialogue,
+mixing voices, allowing for new ideas to appear and to be translated
+into alternative solutions (\protect\hyperlink{ref-Wascher2019}{Wascher,
+Kaletka, \& Schultze, 2019}). The way these organizational forms perform
+often depends on the problem that is being addressed and the context
+they belong to. This means that the people, the organizations involved
+and even the methods applied within a SI lab are constantly changing
+(\protect\hyperlink{ref-Wascher2018}{Wascher, Hebel, Schrot, \&
+Schultze, 2018}).
+
+The changing and permeable nature of the ``lab'' phenomenon represents a
+complex working environment which often leads to conditions of
+uncertainty. This is something on which authors have raised concerns,
+suggesting that those teams in charge of leading an innovation lab
+should be able to deal with ambiguities, integrate multiple perspectives
+and facilitate the work across-disciplines
+(\protect\hyperlink{ref-McGann2019}{McGann, Wells, \& Blomkamp, 2019};
+\protect\hyperlink{ref-Osorio2020}{Ferney; Osorio, Dupont, Camargo,
+Sandoval, \& Peña, 2020}). There is an increasing interest in how
+innovation labs can be used to address societal problems
+(\protect\hyperlink{ref-McGann2019}{McGann, Wells, \& Blomkamp, 2019});
+governments, companies, universities, and even communities are
+continuously turning to the implementation of their own ``lab.'' They
+are becoming vectors for fostering collaborative learning, inclusive
+entrepreneurial thinking, systemic change and the transfer of innovation
+capabilities (\protect\hyperlink{ref-Camargo2021}{Camargo, Morel, \&
+Lhoste, 2021}; \protect\hyperlink{ref-Delgado2020}{Delgado, Galvez,
+Hassan, Palominos, \& Morel, 2020};
+\protect\hyperlink{ref-Rayna2019}{Rayna \& Striukova, 2019};
+\protect\hyperlink{ref-RezaeeVessal2021}{\textbf{RezaeeVessal2021?}}).
+However, several questions arise when considering how the teams managing
+these initiatives should be composed and organized
+(\protect\hyperlink{ref-Lewis2020}{J. M. Lewis, 2020};
+\protect\hyperlink{ref-Zivkovic2018}{Zivkovic, 2018}). This aspect is of
+paramount importance, especially at the early-design phase to foster the
+future development and consolidation of such initiatives.
+
+In fact, the assembling of innovation teams has been a matter of
+interest for a long time. Both practitioners and scholars from public
+and private sectors have addressed and shared their experiences in the
+nature and characteristics of innovations teams across time. This is a
+vision that has been in constant evolution, referring for instance to
+the 80's where corporate-type innovation teams, whose nature depended
+mainly on the emergence of those `champions' capable of overcoming any
+obstacle, while additional roles were organized towards supporting them
+\protect\hyperlink{ref-Jenssen2004}{Jenssen \& Jørgensen}
+(\protect\hyperlink{ref-Jenssen2004}{2004}). Then, as the adoption of
+open innovation practices became more widespread, the idea of innovation
+teams has progressively become more agile and adaptive, opening the door
+to the integration of multiple disciplines, and being the inspiration
+for new ways of work and collaboration
+(\protect\hyperlink{ref-Hering2005}{Hering \& Phillips, 2005};
+\protect\hyperlink{ref-Hellstrom2002}{\textbf{Hellstrom2002?}};
+\protect\hyperlink{ref-Gemuxfcnden2007}{\textbf{Gemünden2007?}}). While
+the perception of lonely innovators and isolated teams seems to persist
+today, the increasing interconnection and complexity of the problems
+that we face as society, the amount of information and knowledge that is
+continuously created, and the challenging task of making critical
+decisions with unforeseeable repercussions, are evidence on why today's
+innovation teams are called to be able to efficiently collaborate under
+a multitude of perspectives, disciplines and cultures
+(\protect\hyperlink{ref-Bjuxf6rklund2017}{\textbf{Björklund2017?}};
+\protect\hyperlink{ref-Puttick2014teams}{\textbf{Puttick2014teams?}}).
+
+This is not a minor issue since it is in people where the success of
+every innovation process of an organization lies
+(\protect\hyperlink{ref-Leonard1995}{\textbf{Leonard1995?}}). Thus,
+understanding the dynamics of group work and team performance has been a
+topic of interest for the scientific community. In this regard, previous
+studies have tackled this issue from several perspectives. In terms of
+team theory for instance, \protect\hyperlink{ref-Belbin2010}{Belbin}
+(\protect\hyperlink{ref-Belbin2010}{2010}) gathers in her book an
+extensive research that resumes her proposition of the nine key team
+roles at work. Originally published in 1993, Belbin explains in her work
+why roles in a team are in fact the sum up of multiple factors such as
+personal traits, knowledge, skills, experience and even situations that
+will determine a person's behaviour in group work or in a specific job.
+More specifically studies on innovation teams as the ones by
+(\protect\hyperlink{ref-Kratzer2006b}{\textbf{Kratzer2006b?}}) have
+focused on examining how factors such as team communication, conflicts
+or virtuality influence creativity performance. Likewise,
+\protect\hyperlink{ref-DeCusatis2008}{DeCusatis}
+(\protect\hyperlink{ref-DeCusatis2008}{2008}) pointed out how team
+performance varies based on generational preferences, habits and the
+nature of the intended innovation. Precisely, this changing nature of
+the innovation process across time has opened the door for not only
+asking which roles are required but also what are the competences needed
+for successful innovation teams.
+
+That is why researches like these of
+(\protect\hyperlink{ref-Chatenier2010}{Chatenier, Verstegen, Biemans,
+Mulder, \& Omta, 2010}) and
+(\protect\hyperlink{ref-Podmetina2018}{Podmetina, Soderquist, Petraite,
+\& Teplov, 2018}) have proposed specific competence profiles, for open
+innovation teams revealing what are the main tasks they perform, the
+main challenges they face and the underlying competencies behind them.
+\protect\hyperlink{ref-Chatenier2010}{Chatenier, Verstegen, Biemans,
+Mulder, \& Omta} (\protect\hyperlink{ref-Chatenier2010}{2010}) pointed
+out that competence profiles are instrumental for the creation and
+development of innovation teams. However, besides their comprehensive
+and detailed model they also suggest that a single competence profile
+falls short when it comes to assembling effective innovation teams,
+specifically at the moment of determining which competences need to be
+held by each team member and for which role.
+
+Despite the existing research, the literature remains scarce when
+referring to what competences are key for guiding the conformation of SI
+lab teams and under which roles can they be organized. This is a major
+issue for the successful implementation of an innovation lab initiative,
+since beyond physical and technological resources, human facilitation is
+one of its fundamental pillars
+(\protect\hyperlink{ref-Magadley2009}{Magadley \& Birdi, 2009}).
+Furthermore, how these aspects are early weighed in terms of the lab
+setup and its context (i.e.~private, community or university) determines
+the type of challenges a lab team will have to face
+(\protect\hyperlink{ref-Rayna2019}{Rayna \& Striukova, 2019}). But more
+importantly, the strategies to overcome these challenges could be driven
+or undermined according to the competences of the lab team, reflecting
+also on how effectively they would be able to achieve the intended
+social impact (\protect\hyperlink{ref-Rayna2021}{Rayna \& Striukova,
+2021}). Therefore, the main focus of this article lies on the
+identification of the key competences and roles that could help the
+conformation of teams meant to be the bearers of SI processes. Our goal
+is to propose a methodological approach for the early design of SI lab
+teams. By means of a self-assessment tool, we intend to provide
+practical guidance for the creation of more enduring lab teams while at
+the same time we continue to create awareness on the management of these
+organizational structures.
+
+To this end, the article first elaborates on the concepts of SI lab,
+competence and innovation roles. Next, a role-based framework is
+developed by comparing seven existing conceptual frameworks drawn from
+the literature on innovation teams and SI. Then, the proposed framework
+is operationalized through a competence-based assessment tool (online
+questionnaire) from which a self-assessment methodology is designed.
+This approach is subsequently tested within the context of the Climate
+Labs project, an Erasmus+ initiative whose aim is to strengthen the
+applied research and innovation capacities of 10 Latin American Higher
+Education Institutions in Mexico, Brazil and Colombia via the design and
+implementation of Social Innovation Labs for mitigation and adaptation
+to Climate Change. Results from this exploratory study evidence that the
+chosen approach is instrumental in the characterization of teams at the
+early stages of the implementation of a lab project inside Higher
+Education Institutions, enabling them to elicit improvement strategies.
+Lastly, discussion and conclusions are built around the main
+implications of this work and suggested paths for future research.
+
+\hypertarget{theoretical-background}{%
+\section{Theoretical Background}\label{theoretical-background}}
+
+\hypertarget{social-innovation-labs}{%
+\subsection{Social Innovation Labs}\label{social-innovation-labs}}
+
+SI refers to the new answers provided to the increasing unsatisfied or
+badly-satisfied societal issues
+(\protect\hyperlink{ref-Gregoire2016}{Gregoire, 2016}). It is understood
+as the new social relations (doing, organizing, framing and knowing)
+between people (e.g.~producers and consumers, citizens and government,
+refugees and native inhabitants, etc.) as well as between people and any
+other aspect in society (e.g.~people and nature, producers and their
+products, etc.) (\protect\hyperlink{ref-Strasser2019}{Strasser, Kraker,
+\& Kemp, 2019}). SI has been described as being context specific, these
+new social relations often lead to novel practices that are meant to
+address social issues such as childcare, education, unemployment, crime
+prevention, ageing population or climate change
+(\protect\hyperlink{ref-Dias2019}{Dias \& Partidário, 2019} ;
+\protect\hyperlink{ref-Rayna2019}{Rayna \& Striukova, 2019}). This means
+that the value sought through SI is primarily intended to benefit
+society rather than individuals
+(\protect\hyperlink{ref-Moulaert2014}{\textbf{Moulaert2014?}}). A key
+difference from other innovation approaches, such as technological
+innovation, is that the focus is not necessarily on new technologies or
+material infrastructure but to contribute to solving social problems
+where technology is seen as a means for that purpose
+(\protect\hyperlink{ref-Mulgan2006}{Mulgan, 2006};
+\protect\hyperlink{ref-Murray2010}{Murray, Caulier-Grice, \& Mulgan,
+2010}). In that sense, SI mainly consists of taking advantage of
+existing competences and expertise within the population to find more
+effective, efficient or sustainable ways to tackle current demanding
+issues (\protect\hyperlink{ref-Strasser2019}{Strasser, Kraker, \& Kemp,
+2019}). This also implies that SI solutions are a product of relational
+changes that prioritize values rather than status, purpose rather than
+profit, co-ownership rather than hierarchy, and collaboration rather
+than competition (\protect\hyperlink{ref-Gregoire2016}{Gregoire, 2016};
+\protect\hyperlink{ref-Strasser2019}{Strasser, Kraker, \& Kemp, 2019}).
+
+Recently, the term SI lab has been used for framing the different
+organizational forms that agglomerate teams and methods with the
+intention of creating socially innovative initiatives
+(\protect\hyperlink{ref-Jezierski2014}{Jezierski et al., 2014};
+\protect\hyperlink{ref-Wascher2019}{Wascher, Kaletka, \& Schultze,
+2019}; \protect\hyperlink{ref-Westley2015}{Westley et al., 2015}). The
+notion of innovation labs has been present in the literature for several
+years now (\protect\hyperlink{ref-Osorio2019a}{\textbf{Osorio2019a?}}),
+building on the more classic ``lab'' idea usually associated to the
+physical or natural sciences, to establishing itself as a ``safe haven
+for experimentation, focused on problem solving and solution creation''
+(\protect\hyperlink{ref-Bloom2016}{Bloom \& Faulkner, 2016}). Among the
+constellation of labs, SI labs raise with the particular focus on
+addressing complex social problems and enabling coherent action by
+multiple stakeholders
+(\protect\hyperlink{ref-Zikovic2018}{\textbf{Zikovic2018?}}). They do so
+by providing the space and processes for facilitating collaboration
+among cross-sector stakeholders in order to develop new projects,
+products, tools, regulations, policies, etc.
+(\protect\hyperlink{ref-Wascher2018}{Wascher, Hebel, Schrot, \&
+Schultze, 2018}).
+
+SI labs are characterized because they foster the creation of dialogue,
+listening and mixing the different voices of the actors involved, and
+creating boundary objects (e.g.~prototypes, illustrations, concepts,
+scenarios, and maps) for knowledge co-production processes to allow
+diverse actors to work together (\protect\hyperlink{ref-Lake2016}{Lake,
+Fernando, \& Eardley, 2016}; See
+\protect\hyperlink{ref-Nilsson2015}{Nilsson, Bonnici, \& EL, 2015};
+\protect\hyperlink{ref-Timmermans2020}{Timmermans, Blok, Braun,
+Wesselink, \& Nielsen, 2020}). Ultimately, they act as cross-pollinators
+of co-creation methods, approaches and perspectives between groups
+allowing to stimulate and channel collective creativity so that new
+ideas constantly emerge (\protect\hyperlink{ref-Jezierski2014}{Jezierski
+et al., 2014}; \protect\hyperlink{ref-Rayna2019}{Rayna \& Striukova,
+2019}). Despite how promising it is to pursue the innovation lab
+approach, it is important to keep in mind that this is a response to
+keep up to increasing and accumulating changes that we live today and
+where more conventional approaches fall short
+(\protect\hyperlink{ref-Zivkovic2018}{Zivkovic, 2018};
+\protect\hyperlink{ref-RezaeeVessal2021}{\textbf{RezaeeVessal2021?}}).
+That is to say, to embark on such an initiative implies to deal with
+uncertainty, ambiguity and tensions that are inherent aspects of working
+on such complex and changing conditions
+(\protect\hyperlink{ref-Jezierski2014}{Jezierski et al., 2014};
+\protect\hyperlink{ref-Osorio2019}{Ferney Osorio et al., 2019}). This is
+why organizations willing to create their own ``lab'' need to be aware
+of the challenges and opportunities that this type of initiative
+entails.
+
+SI lab teams perform in permeable and changing environments where people
+and organizations come and go depending on the problem that is being
+addressed and the parties to whom it is relevant
+(\protect\hyperlink{ref-Wascher2018}{Wascher, Hebel, Schrot, \&
+Schultze, 2018}). These ever-changing conditions demand for teams who
+value and practice flexibility and agility in order to make the most of
+the ecosystem. Lab teams should possess a wide range of competences that
+allow them to be open to transitions and comfortable with ambiguities;
+use multiple lenses to integrate multiple perspectives; and be able and
+willing to work across-disciplines so resources can be mobilized in
+creative ways (\protect\hyperlink{ref-Jezierski2014}{Jezierski et al.,
+2014}; \protect\hyperlink{ref-Rayna2021}{Rayna \& Striukova, 2021};
+\protect\hyperlink{ref-Puttick2014teams}{\textbf{Puttick2014teams?}}).
+Still, literature seems to remain scarce when it comes to providing
+guidance on which competences should SI lab teams have or focus their
+development in order to succeed. In the next subsection, we explore this
+issue in order to establish a common ground for what set of competences
+a team for a SI lab should have.
+
+\hypertarget{competence-and-social-innovation-labs}{%
+\subsection{Competence and social innovation
+labs}\label{competence-and-social-innovation-labs}}
+
+From organizational and managerial perspectives, development of human
+competences is a fundamental task in the path of innovation and
+successful organizations
+(\protect\hyperlink{ref-Leonard-Barton1995}{\textbf{Leonard-Barton1995?}}).
+Understanding individual competences is key for enabling teams and
+organizations to perform and adapt in rapidly changing conditions
+(\protect\hyperlink{ref-Sandberg2000}{Sandberg, 2000}). In general, the
+concept of \emph{competence} is understood as the capability of an
+individual to deliver sustainable and effective performance in a
+specific domain, job, role, organizational context or situation
+(\protect\hyperlink{ref-Mulder2014}{Mulder, 2014}). A \emph{competence}
+consists of various \emph{competencies} that coherently cluster a set of
+knowledge, skills, attitudes and experience
+(\protect\hyperlink{ref-Mulder2014}{Mulder, 2014}). In that sense,
+competence profiles are often used to represent the functional and
+behavioral competencies that are required to successfully meet complex
+demands in a particular context
+(\protect\hyperlink{ref-Chatenier2010}{Chatenier, Verstegen, Biemans,
+Mulder, \& Omta, 2010}).
+
+In the context of open innovation for instance,
+(\protect\hyperlink{ref-Chatenier2010}{Chatenier, Verstegen, Biemans,
+Mulder, \& Omta, 2010}) proposed in their work a competence profile for
+open innovation teams based on 20 semi-structured interviews and 2 focus
+groups with professionals that had participated in open innovation
+projects in the agribusiness sector. Based on their empirical findings,
+they built a profile composed of 4 main competence categories and 34 key
+competencies to accomplish three main tasks of an open innovation team:
+(1) managing the inter-organizational collaboration process, (2)
+managing the overall innovation process and (3) creating new knowledge
+collaboratively. They consider that a team having competence in
+self-management, interpersonal management, project management and
+content management should be better prepared to deal with the challenges
+behind those main tasks.
+
+In a similar way, \protect\hyperlink{ref-Podmetina2015}{Podmetina,
+Hafkesbrink, Teplov, Dabrowska, \& Petraite}
+(\protect\hyperlink{ref-Podmetina2015}{2015}) proposed an open
+innovation specialist profile based on a large-scale survey with 528
+European companies. By inquiring on the required and desired
+competencies that an employee should have for implementing open
+innovation, they build a profile composed of six categories of
+competencies: collaboration skills, interdisciplinary skills, methodic
+skills, explorative skills, transformational skills and exploitative
+skills. This work will subsequently lead to the proposition of a
+competence model for open innovation in which direct links between
+competencies, key activities and roles are made at the organizational
+level (\protect\hyperlink{ref-Podmetina2018}{Podmetina, Soderquist,
+Petraite, \& Teplov, 2018}). This holistic understanding of what
+constitutes a person's essentials elements for performing in a
+determined task or role is instrumental for assembling teams and
+training professionals (\protect\hyperlink{ref-Mulder2014}{Mulder,
+2014}). Furthermore, a competence profile can also be used as an
+assessment tool of ongoing teams in order to spark reflecting processes
+(\protect\hyperlink{ref-Sandberg2000}{Sandberg, 2000}). This ultimately
+allows managers for identifying whether there is room for improvement
+and deciding what kind of actions are worth pursuing in order to enhance
+a team's performance, especially in the complex and uncertain
+circumstances such as the ones of facilitating innovation processes
+(\protect\hyperlink{ref-Chatenier2010}{Chatenier, Verstegen, Biemans,
+Mulder, \& Omta, 2010}). Nevertheless, although the studies conducted by
+(\protect\hyperlink{ref-Chatenier2010}{Chatenier, Verstegen, Biemans,
+Mulder, \& Omta, 2010}) and
+(\protect\hyperlink{ref-Podmetina2018}{Podmetina, Soderquist, Petraite,
+\& Teplov, 2018}) are presented as specific but not unique to the open
+innovation context, little has been studied in terms of SI and SI labs.
+
+While the existing literature on SI labs constantly highlights the
+importance of the lab team and the selection of the staff, most of
+today's experiences and insights rely on generic statements such as the
+need of people with mixed profiles and backgrounds to reflect the social
+reality, with both traditional skills such as project management and
+communications and innovation skills to get things done, or with
+networking skills to gather participants and build connections
+(\protect\hyperlink{ref-Jezierski2015}{\textbf{Jezierski2015?}}).
+Acknowledging the importance of this issue,
+\protect\hyperlink{ref-Wascher2018}{Wascher, Hebel, Schrot, \& Schultze}
+(\protect\hyperlink{ref-Wascher2018}{2018}) gathered from the literature
+a set of 14 competences which they proposed as key for a SI lab team
+(see Table 1). They consider that the combination of all of these
+competences should help the team to successfully manage and facilitate
+cross-sector collaborations. Furthermore, these teams tend to be
+relatively small, usually composed by a lab manager, administrative
+staff and members dedicated to the lab-process facilitation
+(\protect\hyperlink{ref-Wascher2018}{Wascher, Hebel, Schrot, \&
+Schultze, 2018}). Yet, there is no evidence that suggests what are the
+required roles for a SI lab and further, which competences are needed to
+effectively perform those roles.
+
+\providecommand{\docline}[3]{\noalign{\global\setlength{\arrayrulewidth}{#1}}\arrayrulecolor[HTML]{#2}\cline{#3}}
+
+\setlength{\tabcolsep}{2pt}
+
+\renewcommand*{\arraystretch}{1.5}
+
+\begin{longtable}[c]{|p{1.00in}|p{4.00in}}
+
+\caption{SI Lab list of competences retrieved from [@Wascher2018]}\\
+
+\hhline{~~}
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{CFCFCF}\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{\textbf{Competence}}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{CFCFCF}\raggedright}p{\dimexpr 4in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{\textbf{Description}}}} \\
+
+
+
+\endfirsthead
+
+\hhline{~~}
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{CFCFCF}\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{\textbf{Competence}}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{CFCFCF}\raggedright}p{\dimexpr 4in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{11}{11}\selectfont{\textcolor[HTML]{000000}{\textbf{Description}}}} \\
+
+\endhead
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Project management}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 4in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Competence in planning and implementing innovative projects; meeting legal requirements as well as financial expertise, contracts and agreements on the use of space}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Moderation}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 4in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Competence for integrating emerging ideas and orient projects}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Mediation}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 4in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Competence for helping project parties understand and focus on the important issues needed to reach a conflict resolution}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Networking}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 4in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Competence for building connections and relationships with local organizations}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Participation}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 4in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Competence in fostering mechanisms for the involvement of the parties in the project's decision-making processes}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Communication}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 4in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Competence for empathy, change of perspective and use of media in a clear, positive, conversational fashion}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Self-organization}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 4in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Competence for ambiguity and frustration tolerance, confidence and self-esteem}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Intercultural}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 4in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Competence in ensuring inclusivity throughout the project}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Evaluation}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 4in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Competence in the design of mechanisms for monitoring strategies and results}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Research methods and interdisciplinary work}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 4in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Competence for working under interdisciplinary environments using diverse research methods such as critical thinking, data analytics, social research, anthropology, etc.}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Design methods and creative thinking}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 4in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Competence in applying design methods such as design thinking, theory of change planning, etc.}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Information and telecommunication techniques}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 4in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Competence in technological techniques that provide support to the project development}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Entrepreneurial thinking}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 4in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Competence in project incubation processes and ventures}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Systems thinking}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 4in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{9}{9}\selectfont{\textcolor[HTML]{000000}{Competence in addressing challenges in a holistic way and being able to examine the links and interactions between all the constituent elements}}} \\
+
+
+
+\end{longtable}
+
+\hypertarget{innovation-teams-roles}{%
+\subsection{Innovation Teams \& Roles}\label{innovation-teams-roles}}
+
+The idea of thinking on what are the roles or behaviors that are
+required to facilitate the innovation process within an organization is
+not new at all. One can refer to the notion of ``champion'' back in the
+60's where the success of the innovation process was attributed to the
+one single person who was willing to fail for a doubtful idea but
+capable of reaching success \protect\hyperlink{ref-Jenssen2004}{Jenssen
+\& Jørgensen} (\protect\hyperlink{ref-Jenssen2004}{2004}). Nevertheless,
+the aim of reflecting on innovation roles is no longer to create heroes
+that prevail against all odds. Instead, it consists of building strong
+teams aware of their strengths and weaknesses so that they can find ways
+to overcome the barriers in the path of realizing the intended
+innovation process
+(\protect\hyperlink{ref-Gemuxfcnden2007}{\textbf{Gemünden2007?}}).
+Indeed, innovation does not originate and sustain itself, but rather
+through the people who make it happen through teams that push their
+imagination, resilience and perseverance
+(\protect\hyperlink{ref-Kelley2005}{Kelley \& Littman, 2005}).
+
+It is in this sense that literature on innovation teams and roles has
+evolved, as innovation processes have become more open, collaborative
+and social, so it has been the case for the roles needed to facilitate
+these processes. By diving into the literature of innovation teams we
+intend to illustrate the diversity of roles that members of an
+innovation team can have which subsequently could be of inspiration for
+the set up of a lab team. Under this context, seven models of innovation
+roles have been found in the literature (Figure 1) which will be now
+discussed.
+
+One of the earliest innovation role models that can be found is the one
+proposed by (\protect\hyperlink{ref-Roberts1982}{Roberts \& Fusfeld,
+1982}). Their proposition is composed of five roles needed to fulfil the
+critical functions for a technology-based innovation process. These are
+the \emph{idea generator}, the \emph{entrepreneur} or \emph{champion},
+the \emph{project leader}, the \emph{gatekeeper} and the \emph{coach}.
+The intention was to highlight those key functions that were not always
+explicit in formal job structures. They also acknowledge that depending
+on the size of the team or the organization, some roles need to be
+fulfilled by more than one person, while some individuals can perform
+more than one role, and that ultimately, the roles someone can fulfil
+will change over a person's career. But beyond considering a role as
+purely functional, it is even more important to ask how a person is
+going to behave within a team. Under the premise that people's useful
+behaviors can be grouped into a set of related clusters,
+(\protect\hyperlink{ref-Belbin2010}{Belbin, 2010}) condensed in her book
+(originally published in 1993) the nine team roles which make an
+effective contribution to team performance: \emph{plant, resource
+investigator, coordinator, shaper, monitor evaluator, teamworker,
+implementer, completer finisher and specialist}. Even though the Belbin
+team roles are not exclusively for an innovation team, they represent an
+important part of team theory that should be considered.
+
+More recently, \protect\hyperlink{ref-Hering2005}{Hering \& Phillips}
+(\protect\hyperlink{ref-Hering2005}{2005}) presented eight innovation
+roles making emphasis on those that are required for a generic
+innovation process. They detailed the features of what can be expected
+of these roles rather than just titles or job descriptions. According to
+them, \emph{connector, librarian, framer, judge, prototyper, monitor}
+and \_storyteller \_are the roles that should be sought to set-up an
+innovation team. Organization's commitment and a belief system are also
+considered critical for them in order to have the time and the resources
+for innovation teams to deal with the uncertainty involved in any
+innovation process. Alternatively,
+\protect\hyperlink{ref-Kelley2005}{Kelley \& Littman}
+(\protect\hyperlink{ref-Kelley2005}{2005}) published their book
+\emph{Ten Faces of Innovation} based on their experiences at IDEO. They
+condensed ten persona descriptions as a way to inspire the roles that
+members of an organization should play to foster creativity and
+innovation. They consider that each role or persona helps to bring on
+the table specific values, tools, skills and thus, it is important to
+assure their presence in any innovation team. These ten roles are
+grouped in \emph{learners} (anthropologist, experimenter and
+cross-pollinator), \emph{organizers} (hurdler, collaborator and
+director) and \emph{builders} (experience architect, set designer,
+caregiver and storyteller).
+
+Based on 104 interviews with representatives of German enterprises and
+42 cases from questionnaires,
+(\protect\hyperlink{ref-Gemuxfcnden2007}{\textbf{Gemünden2007?}})
+proposed a model to assess whether the influence of certain innovation
+roles increase the success of new product development under increasingly
+more open innovation contexts. They pointed out that not only innovation
+and technological experts are present (\emph{expert promoter} and
+\emph{process promoter}), but strong leadership (\emph{project leader})
+as well as good external relationships (\emph{technology and market
+relationships promoters}). Moreover, they emphasized the importance of
+having institutional support in the form of \emph{power promoters}. In
+more recent years, (\protect\hyperlink{ref-Goduscheit2014}{Goduscheit,
+2014}) builds on the work initiated by
+(\protect\hyperlink{ref-Gemuxfcnden2007}{\textbf{Gemünden2007?}}). In
+this case, he seeks to further develop the concept of innovation
+promoters. This notion is established on the basis that innovation teams
+are meant to overcome the barriers and difficulties to successful
+innovations. His interest was to explore the inter-organizational
+dimension among the innovation roles proposed by
+(\protect\hyperlink{ref-Gemuxfcnden2007}{\textbf{Gemünden2007?}}) by
+analyzing how they interact/perform with multiple organizations. As a
+result, he further develops the innovation promoters model by moving
+from the original six roles to a proposition of nine roles:
+\emph{seniority, top-level representative, technological expert,
+methodology expert, intra-organizational process, inter-organizational
+process, project process, technology relationship \emph{and} market
+relationship.}
+
+Finally, we refer to the very interesting work conducted by
+(\protect\hyperlink{ref-Nystrom2014}{\textbf{Nystrom2014?}}). They also
+build on the work realized by
+(\protect\hyperlink{ref-Gemuxfcnden2007}{\textbf{Gemünden2007?}}) on
+analyzing the roles for an open innovation context but they center their
+research on the influence these roles can have on innovation networks.
+For this, they studied 26 living labs leading to a final proposition of
+17 roles that network actors can adopt or create during an innovation
+project. The new roles identified are mostly related to the users and
+the facilitators (\emph{e.g., co-creator, orchestrator, contributor}),
+which correspond to living lab approaches that encourage
+multi-stakeholder involvement. They also state the importance of
+innovation roles to combine multiple perspectives due to the increasing
+complexity of innovation projects. This is something that relates to the
+more systemic and transdisciplinary approach that is required on SI
+projects.
+
+Throughout this literature review it is possible to observe that despite
+the diversity of perspectives, processes or names, authors agree that
+unbalanced teams and frequent changes can disturb how an innovation team
+performs. This is a challenge that definitely should be considered in
+the conformation of an innovation lab. However, none of the role models
+establishes a direct link between the proposed roles and the adequate
+competences that should allow a person to fulfil it. Nor any of the
+identified studies is developed under the SI context. These elements are
+taking into account the proposition of this article in the next section.
+
+\hypertarget{methodology}{%
+\section{Methodology}\label{methodology}}
+
+Throughout the theoretical background presented before, the principles
+behind the notion of SI labs have been explored, along with the dynamics
+that lab teams are deemed to deal in such kind of context. Several
+questions have been raised in terms on which roles would allow a SI lab
+team to be better prepared to accomplish their mission. And further,
+what set of competences would be necessary for these teams to thrive in
+such conditions. Accordingly, seven innovation role models have been
+retrieved from the literature on innovation teams as well as a set of 14
+competences considered as key for SI lab teams. However, since research
+on how managerial teams of innovation labs perform, and more
+specifically those within the SI context remains unexplored, through
+this study we intend to establish a connection between theory from
+competences for innovation and innovation teams in order to hypothesize
+on the essentials elements that should be considered in the process of
+assembling a SI lab team. To this end, a four-stage process was designed
+for conducting this research as shown in Figure 2.
+
+Firstly, based on the literature review an adapted role model is
+proposed. Since none of the previous role models for innovation teams
+were rooted in SI nor innovation labs, we aim to take into consideration
+the 14 identified competences to make a model proposition adapted to the
+conditions of this research. Following this, the proposed model is
+operationally defined as an assessment tool (online questionnaire) that
+would ultimately be applied under a self-assessment approach. Given the
+practical motivation behind this exploratory study, is to support 10
+latin-american university teams to set up the lab team for their own SI
+lab within the frame of the Erasmus+ Climate Labs project, we opted to
+pursue a self-assessment approach with a two-fold purpose. Firstly, to
+use the proposed approach to spark reflecting processes that would allow
+the university teams to increase awareness of their current status
+toward the expected roles. And secondly, to have a comprehensive role
+characterization at the early stage of the project encompassing all the
+lab teams according to their own perception of the degree of mastery of
+such competences.
+
+Due to the transcontinental nature of the Climate Labs project, the
+application of the self-assessment approach was conducted virtually by
+means of the online questionnaire and an online workshop. The proposed
+approach was designed so each lab team member (including professors,
+researchers, students, and administrative staff) could participate and
+be part of the process. A total of 65 answers were received along with
+the workshop results for each team. Results and insights are then
+analyzed and discussed so conclusions can be made in order to provide
+guidelines for the future of the Climate Labs project but also to the
+further development of this study.
+
+\hypertarget{proposition-of-a-competence-based-role-model-for-si-lab-teams}{%
+\section{Proposition of a competence-based role model for SI Lab
+teams}\label{proposition-of-a-competence-based-role-model-for-si-lab-teams}}
+
+Despite several insights from empirical studies and different statements
+of which functions or behaviours are possible to find in an innovation
+team, the propositions and explanations fall short when it comes to the
+specificity of innovation lab teams. We therefore believe that it is
+reasonable to think that by establishing a clearer connection between
+competences for SI labs and innovation team theory a model can be
+proposed. First, drawing from the 14 competences proposed by
+(\protect\hyperlink{ref-Wascher2018}{Wascher, Hebel, Schrot, \&
+Schultze, 2018}), a categorization was made thinking on which main
+functions could be proposed. Based on the literature and according to
+knowledge and experience of the authors, four categories of competences
+were identified as illustrated in Table 2. This was done in terms of
+those competences that contribute the most to one of the following
+functions: (1) innovation process orchestration, (2) materialize
+systemic solutions, (3) spark connections and new ideas, and those that
+contribute to (4) organizing and measuring results.
+
+\providecommand{\docline}[3]{\noalign{\global\setlength{\arrayrulewidth}{#1}}\arrayrulecolor[HTML]{#2}\cline{#3}}
+
+\setlength{\tabcolsep}{2pt}
+
+\renewcommand*{\arraystretch}{1.5}
+
+\begin{longtable}[c]{|p{1.00in}|p{0.80in}|p{0.80in}|p{0.80in}|p{0.80in}}
+
+\caption{Categorization of SI lab team competences}\\
+
+\hhline{~~~~~}
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{CFCFCF}\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{\textbf{Competence}}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{CFCFCF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{\textbf{Orchestrate Innovation Process}}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{CFCFCF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{\textbf{Materialize Systemic Solutions}}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{CFCFCF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{\textbf{Spark Connections \& Ideas}}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{CFCFCF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{\textbf{Organize and measure results}}}} \\
+
+
+
+\endfirsthead
+
+\hhline{~~~~~}
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{CFCFCF}\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{\textbf{Competence}}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{CFCFCF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{\textbf{Orchestrate Innovation Process}}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{CFCFCF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{\textbf{Materialize Systemic Solutions}}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{CFCFCF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{\textbf{Spark Connections \& Ideas}}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{CFCFCF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{\textbf{Organize and measure results}}}} \\
+
+\endhead
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{Project management}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{X}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{Moderation}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{X}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{Mediation}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{X}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{Networking}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{X}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{Participation}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{X}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{Communication}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{X}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{Self-organization}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{X}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{Intercultural}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{X}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{Evaluation}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{X}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{Research methods and interdisciplinary work}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{X}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{Design methods and creative thinking}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{X}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{Information and telecommunication techniques}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{X}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{Entrepreneurial thinking}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{X}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\cellcolor[HTML]{EFEFEF}\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} \\
+
+
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 1in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{Systems thinking}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{X}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} & \multicolumn{1}{!{\color[HTML]{000000}\vrule width 0pt}>{\raggedright}p{\dimexpr 0.8in+0\tabcolsep+0\arrayrulewidth}!{\color[HTML]{000000}\vrule width 0pt}}{\fontsize{8}{8}\selectfont{\textcolor[HTML]{000000}{}}} \\
+
+
+
+\end{longtable}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\hypertarget{ref-Belbin2010}{}%
+Belbin, R. M. (2010). \emph{Team roles at work, second edition}.
+\emph{Team Roles at Work, Second Edition} (Second., pp. 1--162). Taylor;
+Francis. Retrieved from \href{https://www.belbin.com}{www.belbin.com}
+
+\leavevmode\hypertarget{ref-Bloom2016}{}%
+Bloom, L., \& Faulkner, R. (2016). Innovation spaces: Lessons from the
+united nations. \emph{Third World Quarterly}, \emph{37}, 1371--1387.
+Routledge. Retrieved from
+\url{http://www.tandfonline.com/doi/full/10.1080/01436597.2015.1135730}
+
+\leavevmode\hypertarget{ref-Camargo2021}{}%
+Camargo, M., Morel, L., \& Lhoste, P. (2021). \emph{Progressive
+university technology transfer of innovation capabilities to SMEs: An
+active and modular educational partnership}. (D. Mietzner \& C. Schultz,
+Eds.)\emph{New Perspectives in Technology Transfer. FGF Studies in Small
+Business and Entrepreneurship.} (1st ed., pp. 181--205). Springer, Cham.
+Retrieved from \url{https://doi.org/10.1007/978-3-030-61477-5_11}
+
+\leavevmode\hypertarget{ref-Chatenier2010}{}%
+Chatenier, E. du, Verstegen, J. A. A. M., Biemans, H. J. A., Mulder, M.,
+\& Omta, O. S. W. F. (2010). Identification of competencies for
+professionals in open innovation teams. \emph{R and D Management},
+\emph{40}, 271--280. John Wiley \& Sons, Ltd. Retrieved from
+\url{https://onlinelibrary.wiley.com/doi/full/10.1111/j.1467-9310.2010.00590.x\%20https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9310.2010.00590.x\%20https://onlinelibrary.wiley.com/doi/10.1111/j.1467-9310.2010.00590.x}
+
+\leavevmode\hypertarget{ref-DeCusatis2008}{}%
+DeCusatis, C. (2008). Creating, growing and sustaining efficient
+innovation teams. \emph{Creativity and Innovation Management},
+\emph{17}, 155--164. John Wiley \& Sons, Ltd. Retrieved from
+\url{http://doi.wiley.com/10.1111/j.1467-8691.2008.00478.x}
+
+\leavevmode\hypertarget{ref-Delgado2020}{}%
+Delgado, L., Galvez, D., Hassan, A., Palominos, P., \& Morel, L. (2020).
+Innovation spaces in universities: Support for collaborative learning.
+\emph{Journal of Innovation Economics \& Management}, \emph{31},
+123--153. De Boeck Supérieur. Retrieved from
+\url{https://www.cairn.info/revue-journal-of-innovation-economics-2020-1-page-123.htm}
+
+\leavevmode\hypertarget{ref-Dias2019}{}%
+Dias, J., \& Partidário, M. (2019). Mind the gap: The potential
+transformative capacity of social innovation. \emph{Sustainability
+(Switzerland)}, \emph{11}, 1--17.
+
+\leavevmode\hypertarget{ref-Goduscheit2014}{}%
+Goduscheit, R. C. (2014). Innovation promoters - a multiple case study.
+\emph{Industrial Marketing Management}, \emph{43}, 525--534. Elsevier
+Inc.
+
+\leavevmode\hypertarget{ref-Gregoire2016}{}%
+Gregoire, M. (2016). Exploring various approaches of social innovation:
+A francophone literature review and a proposal of innovation typology.
+\emph{RAM. Revista de Administração Mackenzie}, \emph{17}, 45--71.
+Universidade Presbiteriana Mackenzie. Retrieved from
+\url{http://www.scielo.br/scielo.php?script=sci_arttext\&pid=S1678-69712016000600045\&lng=en\&tlng=en}
+
+\leavevmode\hypertarget{ref-Gryszkiewicz2016}{}%
+Gryszkiewicz, L., Lykourentzou, I., \& Toivonen, T. (2016). Innovation
+labs: Leveraging openness for radical innovation? \emph{Journal of
+Innovation Management}, \emph{4}, 68--97. Retrieved from
+\url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2556692}
+
+\leavevmode\hypertarget{ref-Hering2005}{}%
+Hering, D., \& Phillips, J. (2005, November). Innovation roles the
+people you need for successful innovation. NetCentrics Corporation.
+
+\leavevmode\hypertarget{ref-Jenssen2004}{}%
+Jenssen, J. I., \& Jørgensen, G. (2004). How do corporate champions
+promote innovations? \emph{International Journal of Innovation
+Management}, \emph{08}, 63--86. World Scientific Pub Co Pte Lt.
+Retrieved from
+\url{https://www.worldscientific.com/doi/epdf/10.1142/S1363919604000964}
+
+\leavevmode\hypertarget{ref-Jezierski2014}{}%
+Jezierski, E., Harvey, J., Hansen, L., Takeuchi, M., Sinha, R., Kieboom,
+K. M. M., \& Edwards, D. (2014). \emph{Labcraft: How social labs
+cultivate change through innovation and collaboration} (p. 160).
+Labcraft Publishing. Retrieved from
+\url{https://www.kl.nl/en/publications/labcraft-innovation-labs-cultivate-change/}
+
+\leavevmode\hypertarget{ref-Kelley2005}{}%
+Kelley, T., \& Littman, J. (2005). \emph{The ten faces of innovation :
+IDEO's strategies for beating the devil's advocate \& driving creativity
+throughout your organization} (pp. 1--273). Currency/Doubleday.
+
+\leavevmode\hypertarget{ref-Kieboom2015}{}%
+Kieboom, M., Exel, T. van, \& Sigaloff, C. (2015). \emph{Lab practice:
+Creating spaces for social change} (pp. 1--81). Kennisland. Retrieved
+from
+\url{https://www.kl.nl/en/publications/lab-practice-creating-spaces-for-social-change/}
+
+\leavevmode\hypertarget{ref-Kratzer2004}{}%
+Kratzer, J., Leenders, O. T. A. J., \& Engelen, J. M. L. van. (2004).
+Stimulating the potential: Creative performance and communication in
+innovation teams. \emph{Creativity and Innovation Management},
+\emph{13}, 63--71. John Wiley \& Sons, Ltd. Retrieved from
+\url{https://onlinelibrary.wiley.com/doi/full/10.1111/j.1467-8691.2004.00294.x\%20https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-8691.2004.00294.x\%20https://onlinelibrary.wiley.com/doi/10.1111/j.1467-8691.2004.00294.x}
+
+\leavevmode\hypertarget{ref-Lake2016}{}%
+Lake, D., Fernando, H., \& Eardley, D. (2016). The social lab classroom:
+Wrestling with---and learning from---sustainability challenges.
+\emph{Sustainability: Science, Practice, and Policy}, \emph{12}, 76--87.
+ProQuest. Retrieved from
+\url{http://sspp.proquest.comhttp://sspp.proquest.com}
+
+\leavevmode\hypertarget{ref-Lewis2020}{}%
+Lewis, J. M. (2020). The limits of policy labs: Characteristics,
+opportunities and constraints. \emph{Policy Design and Practice}, 1--10.
+Routledge. Retrieved from
+\url{https://www.tandfonline.com/doi/full/10.1080/25741292.2020.1859077}
+
+\leavevmode\hypertarget{ref-Lewis2005}{}%
+Lewis, M., \& Moultrie, J. (2005). The organizational innovation
+laboratory. \emph{Creativity and Innovation Management}, \emph{14},
+73--83. Retrieved from
+\url{http://doi.wiley.com/10.1111/j.1467-8691.2005.00327.x}
+
+\leavevmode\hypertarget{ref-Magadley2009}{}%
+Magadley, W., \& Birdi, K. (2009). Innovation labs: An examination into
+the use of physical spaces to enhance organizational creativity.
+\emph{Creativity and Innovation Management}, \emph{18}, 315--325.
+Retrieved from
+\url{http://doi.wiley.com/10.1111/j.1467-8691.2009.00540.x}
+
+\leavevmode\hypertarget{ref-McGann2019}{}%
+McGann, M., Wells, T., \& Blomkamp, E. (2019). Innovation labs and
+co-production in public problem solving. \emph{Public Management
+Review}, 1--20. Retrieved from
+\url{https://www.tandfonline.com/doi/full/10.1080/14719037.2019.1699946}
+
+\leavevmode\hypertarget{ref-Mulder2014}{}%
+Mulder, M. (2014). \emph{Conceptions of professional competence}. (S.
+Billett, C. Harteis, \& H. Gruber, Eds.)\emph{International Handbook of
+Research in Professional and Practice-based Learning} (pp. 107--137).
+Springer, Dordrecht. Retrieved from
+\url{https://link.springer.com/chapter/10.1007/978-94-017-8902-8_5}
+
+\leavevmode\hypertarget{ref-Mulgan2006}{}%
+Mulgan, G. (2006). The process of social innovation. \emph{Innovations:
+Technology, Governance, Globalization}, \emph{1}, 145--162. MIT Press -
+Journals. Retrieved from
+\url{https://www.mitpressjournals.org/doix/abs/10.1162/itgg.2006.1.2.145}
+
+\leavevmode\hypertarget{ref-Murray2010}{}%
+Murray, R., Caulier-Grice, J., \& Mulgan, G. (2010). \emph{The open book
+of social innovation} (p. 224). National endowment for science,
+technology; the art London. Retrieved from
+\url{https://youngfoundation.org/publications/the-open-book-of-social-innovation/}
+
+\leavevmode\hypertarget{ref-Nilsson2015}{}%
+Nilsson, W., Bonnici, F., \& EL, E. W. G. (2015). \emph{The social
+innovation lab: An experiment in the pedagogy of institutional work}.
+\emph{The Business of Social and Environmental Innovation: New Frontiers
+in Africa} (pp. 201--212). Springer International Publishing. Retrieved
+from
+\url{https://link.springer.com/chapter/10.1007/978-3-319-04051-6_11}
+
+\leavevmode\hypertarget{ref-Osorio2019}{}%
+Osorio, Ferney, Dupont, L., Camargo, M., Palominos, P., Peña, J. I., \&
+Alfaro, M. (2019). Design and management of innovation laboratories:
+Toward a performance assessment tool. \emph{Creativity and Innovation
+Management}, \emph{28}, 82--100. John Wiley \& Sons, Ltd (10.1111).
+Retrieved from \url{http://doi.wiley.com/10.1111/caim.12301}
+
+\leavevmode\hypertarget{ref-Osorio2019}{}%
+Osorio, Ferney, Dupont, L., Camargo, M., Palominos, P., Peña, J. I., \&
+Alfaro, M. (2019). Design and management of innovation laboratories:
+Toward a performance assessment tool. \emph{Creativity and Innovation
+Management}, \emph{28}, 82--100. John Wiley \& Sons, Ltd (10.1111).
+Retrieved from \url{http://doi.wiley.com/10.1111/caim.12301}
+
+\leavevmode\hypertarget{ref-Osorio2020}{}%
+Osorio, Ferney;, Dupont, L., Camargo, M., Sandoval, C., \& Peña, J. I.
+(2020). Shaping a public innovation laboratory in bogota: Learning
+through time, space and stakeholders. \emph{Journal of Innovation
+Economics \& Management}, \emph{31}, 69--100. De Boeck Supérieur.
+Retrieved from
+\url{https://www.cairn.info/revue-journal-of-innovation-economics-2020-1-page-69.htm}
+
+\leavevmode\hypertarget{ref-Podmetina2015}{}%
+Podmetina, D., Hafkesbrink, J., Teplov, R., Dabrowska, J., \& Petraite,
+M. (2015). What skills and competences are required to implement open
+innovation? \emph{ISPIM Conference Proceedings} (pp. 1--20). The
+International Society for Professional Innovation Management (ISPIM).
+Retrieved from
+\url{https://search.proquest.com/docview/1780140077/fulltext/11860BF316DB4B68PQ/1?accountid=14211}
+
+\leavevmode\hypertarget{ref-Podmetina2018}{}%
+Podmetina, D., Soderquist, K. E., Petraite, M., \& Teplov, R. (2018).
+Developing a competency model for open innovation: From the individual
+to the organisational level. \emph{Management Decision}. Emerald Group
+Publishing Ltd. Retrieved from
+\url{https://www.emerald.com/insight/content/doi/10.1108/MD-04-2017-0445/full/html}
+
+\leavevmode\hypertarget{ref-Puttick2014}{}%
+Puttick, R., Baeck, P., \& Colligan, P. (2014). \emph{I-teams: The teams
+and funds making innovation happen in governments around the world}.
+Nesta. Retrieved from
+\url{https://www.nesta.org.uk/report/i-teams-the-teams-and-funds-making-innovation-happen-in-governments-around-the-world/}
+
+\leavevmode\hypertarget{ref-Rayna2019}{}%
+Rayna, T., \& Striukova, L. (2019). Open social innovation dynamics and
+impact: Exploratory study of a fab lab network. \emph{R and D
+Management}, \emph{49}, 383--395. Blackwell Publishing Ltd. Retrieved
+from \url{https://onlinelibrary.wiley.com/doi/full/10.1111/radm.12376}
+
+\leavevmode\hypertarget{ref-Rayna2021}{}%
+Rayna, T., \& Striukova, L. (2021). Fostering skills for the 21st
+century: The role of fab labs and makerspaces. \emph{Technological
+Forecasting and Social Change}, \emph{164}, 120391. Elsevier Inc.
+Retrieved from
+\url{https://www.sciencedirect.com/science/article/pii/S0040162520312178\%20https://linkinghub.elsevier.com/retrieve/pii/S0040162520312178}
+
+\leavevmode\hypertarget{ref-Roberts1982}{}%
+Roberts, E. B., \& Fusfeld, A. R. (1982). \emph{Critical functions:
+Needed roles in the innovation process}. (R. Kats, Ed.)\emph{Carrer
+issues in human resource management} (pp. 182--207). Prentice-Hall.
+Retrieved from
+\url{https://books.google.fr/books/about/Career_issues_in_human_resource_manageme.html?id=4CYUAQAAMAAJ\&redir_esc=y}
+
+\leavevmode\hypertarget{ref-Sandberg2000}{}%
+Sandberg, J. (2000). Understanding human competence at work: An
+interpretative approach. \emph{Academy of Management Journal},
+\emph{43}, 9--25. Academy of Management. Retrieved from
+\url{https://journals.aom.org/doi/abs/10.5465/1556383}
+
+\leavevmode\hypertarget{ref-Strasser2019}{}%
+Strasser, T., Kraker, J. de, \& Kemp, R. (2019). Developing the
+transformative capacity of social innovation through learning: A
+conceptual framework and research agenda for the roles of network
+leadership. \emph{Sustainability (Switzerland)}, \emph{11}. MDPI AG.
+
+\leavevmode\hypertarget{ref-Timmermans2020}{}%
+Timmermans, J., Blok, V., Braun, R., Wesselink, R., \& Nielsen, R. Ø.
+(2020). Social labs as an inclusive methodology to implement and study
+social change: The case of responsible research and innovation.
+\emph{Journal of Responsible Innovation}, \emph{7}, 410--426. Routledge.
+Retrieved from
+\url{https://www.tandfonline.com/doi/full/10.1080/23299460.2020.1787751}
+
+\leavevmode\hypertarget{ref-Wascher2018}{}%
+Wascher, E., Hebel, F., Schrot, K., \& Schultze, J. (2018). \emph{Social
+innovation labs - a starting point for social innovation}. TU Dortmund
+University. Retrieved from
+\url{https://kommunen-innovativ.de/sites/default/files/kosi-lab_report_social_innovation_labs_final.pdf}
+
+\leavevmode\hypertarget{ref-Wascher2019}{}%
+Wascher, E., Kaletka, C., \& Schultze, J. (2019). \emph{Social
+innovation labs - a seedbed for social innovation}. \emph{Atlas of
+social innovation: 2nd volume - A world of new practices} (pp.
+136--138). Retrieved from
+\url{https://www.socialinnovationatlas.net/articles/}
+
+\leavevmode\hypertarget{ref-Westley2015}{}%
+Westley, F., Laban, S., Rose, C., McGowan, K., Robinson, K., Tjornbo,
+O., \& Tovey, M. (2015). \emph{Social innovation lab guide} (p. 110).
+Waterloo Institute for Social Innovation; Resilience: Waterloo.
+Retrieved from
+\url{https://uwaterloo.ca/waterloo-institute-for-social-innovation-and-resilience/projects/social-innovation-lab-guide}
+
+\leavevmode\hypertarget{ref-Zivkovic2018}{}%
+Zivkovic, S. (2018). Systemic innovation labs: A lab for wicked
+problems. \emph{Social Enterprise Journal}, \emph{14}, 348--366. Emerald
+Publishing Limited. Retrieved from
+\url{https://www.emeraldinsight.com/doi/10.1108/SEJ-04-2018-0036}
+
+\end{CSLReferences}
+
+
+\end{document}
+
