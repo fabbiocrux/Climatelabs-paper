@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  10 MAY 2021 12:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  10 MAY 2021 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -649,27 +649,14 @@ LaTeX Info: Redefining \mit on input line 1302.
 \c@chapter=\count319
 \secruleskip=\skip91
 \rhverticalsep=\skip92
-(./NJDapacite.sty
-
-LaTeX Warning: You have requested package `NJDapacite',
-               but the package provides `apacite'.
-
-Package: apacite 2013/07/21 v6.03 APA citation
-\c@BibCnt=\count320
-\bibleftmargin=\skip93
-\bibindent=\skip94
-\bibparsep=\skip95
-\bibitemsep=\skip96
-\biblabelsep=\skip97
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip98
-\bibsep=\skip99
+\bibhang=\skip93
+\bibsep=\skip94
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count321
+\c@NAT@ctr=\count320
 )
-LaTeX Info: Redefining \BBA on input line 2711.
-\c@scheme=\count322
+\c@scheme=\count321
 (/usr/local/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen272
@@ -682,16 +669,16 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen279
 \cmidrulekern=\dimen280
 \defaultaddspace=\dimen281
-\@cmidla=\count323
-\@cmidlb=\count324
+\@cmidla=\count322
+\@cmidlb=\count323
 \@aboverulesep=\dimen282
 \@belowrulesep=\dimen283
-\@thisruleclass=\count325
-\@lastruleclass=\count326
+\@thisruleclass=\count324
+\@lastruleclass=\count325
 \@thisrulewidth=\dimen284
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
-\@mathmargin=\skip100
+\@mathmargin=\skip95
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
@@ -705,13 +692,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count327
+\inf@bad=\count326
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count328
-\leftroot@=\count329
+\uproot@=\count327
+\leftroot@=\count328
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count330
-\DOTSCASE@=\count331
+\classnum@=\count329
+\DOTSCASE@=\count330
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 \Mathstrutbox@=\box119
@@ -719,15 +706,15 @@ LaTeX Info: Redefining \dots on input line 499.
 \big@size=\dimen287
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count332
-\c@MaxMatrixCols=\count333
+\macc@depth=\count331
+\c@MaxMatrixCols=\count332
 \dotsspace@=\muskip17
-\c@parentequation=\count334
-\dspbrk@lvl=\count335
+\c@parentequation=\count333
+\dspbrk@lvl=\count334
 \tag@help=\toks34
-\row@=\count336
-\column@=\count337
-\maxfields@=\count338
+\row@=\count335
+\column@=\count336
+\maxfields@=\count337
 \andhelp@=\toks35
 \eqnshift@=\dimen288
 \alignsep@=\dimen289
@@ -736,8 +723,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \totwidth@=\dimen292
 \lineht@=\dimen293
 \@envbody=\toks36
-\multlinegap=\skip101
-\multlinetaggap=\skip102
+\multlinegap=\skip96
+\multlinetaggap=\skip97
 \mathdisplay@stack=\toks37
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
@@ -748,100 +735,100 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headfont=\toks40
 \thm@notefont=\toks41
 \thm@headpunct=\toks42
-\thm@preskip=\skip103
-\thm@postskip=\skip104
-\thm@headsep=\skip105
+\thm@preskip=\skip98
+\thm@postskip=\skip99
+\thm@headsep=\skip100
 \dth@everypar=\toks43
 )
-\c@theorem=\count339
-\c@construction=\count340
-\c@estimate=\count341
-\c@lemma=\count342
-\c@corollary=\count343
-\c@result=\count344
-\c@algth=\count345
-\c@proposition=\count346
-\c@hypothesis=\count347
-\c@experiment=\count348
-\c@LWrule=\count349
-\c@procedure=\count350
-\c@assertion=\count351
-\c@axiom=\count352
-\c@conjecture=\count353
-\c@criterion=\count354
-\c@reduction=\count355
-\c@sublemma=\count356
-\c@case=\count357
-\c@remark=\count358
-\c@notation=\count359
-\c@answer=\count360
-\c@base=\count361
-\c@claim=\count362
-\c@ccomment=\count363
-\c@subproof=\count364
-\c@conclusion=\count365
-\c@observation=\count366
-\c@subcase=\count367
-\c@step=\count368
-\c@summary=\count369
-\c@definition=\count370
-\c@condition=\count371
-\c@property=\count372
-\c@problem=\count373
-\c@fact=\count374
-\c@assumption=\count375
-\c@eexample=\count376
-\c@model=\count377
-\c@affirmation=\count378
-\c@application=\count379
-\c@convention=\count380
-\c@discussion=\count381
-\c@exercise=\count382
-\c@question=\count383
-\c@scholium=\count384
-\c@terminology=\count385
-\c@printcitcnt=\count386
-\c@@pps=\count387
-\c@@ppsavesec=\count388
-\c@@ppsaveapp=\count389
+\c@theorem=\count338
+\c@construction=\count339
+\c@estimate=\count340
+\c@lemma=\count341
+\c@corollary=\count342
+\c@result=\count343
+\c@algth=\count344
+\c@proposition=\count345
+\c@hypothesis=\count346
+\c@experiment=\count347
+\c@LWrule=\count348
+\c@procedure=\count349
+\c@assertion=\count350
+\c@axiom=\count351
+\c@conjecture=\count352
+\c@criterion=\count353
+\c@reduction=\count354
+\c@sublemma=\count355
+\c@case=\count356
+\c@remark=\count357
+\c@notation=\count358
+\c@answer=\count359
+\c@base=\count360
+\c@claim=\count361
+\c@ccomment=\count362
+\c@subproof=\count363
+\c@conclusion=\count364
+\c@observation=\count365
+\c@subcase=\count366
+\c@step=\count367
+\c@summary=\count368
+\c@definition=\count369
+\c@condition=\count370
+\c@property=\count371
+\c@problem=\count372
+\c@fact=\count373
+\c@assumption=\count374
+\c@eexample=\count375
+\c@model=\count376
+\c@affirmation=\count377
+\c@application=\count378
+\c@convention=\count379
+\c@discussion=\count380
+\c@exercise=\count381
+\c@question=\count382
+\c@scholium=\count383
+\c@terminology=\count384
+\c@printcitcnt=\count385
+\c@@pps=\count386
+\c@@ppsavesec=\count387
+\c@@ppsaveapp=\count388
 (/usr/local/texlive/2020/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 \@float@every@algorithm=\toks44
-\c@algorithm=\count390
+\c@algorithm=\count389
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count391
-\c@ALG@rem=\count392
-\c@ALG@nested=\count393
-\ALG@tlm=\skip106
-\ALG@thistlm=\skip107
-\c@ALG@Lnr=\count394
-\c@ALG@blocknr=\count395
-\c@ALG@storecount=\count396
-\c@ALG@tmpcounter=\count397
-\ALG@tmplength=\skip108
+\c@ALG@line=\count390
+\c@ALG@rem=\count391
+\c@ALG@nested=\count392
+\ALG@tlm=\skip101
+\ALG@thistlm=\skip102
+\c@ALG@Lnr=\count393
+\c@ALG@blocknr=\count394
+\c@ALG@storecount=\count395
+\c@ALG@tmpcounter=\count396
+\ALG@tmplength=\skip103
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count398
+\lst@mode=\count397
 \lst@gtempboxa=\box121
 \lst@token=\toks45
-\lst@length=\count399
+\lst@length=\count398
 \lst@currlwidth=\dimen294
-\lst@column=\count400
-\lst@pos=\count401
+\lst@column=\count399
+\lst@pos=\count400
 \lst@lostspace=\dimen295
 \lst@width=\dimen296
-\lst@newlines=\count402
-\lst@lineno=\count403
+\lst@newlines=\count401
+\lst@lineno=\count402
 \lst@maxwidth=\dimen297
 (/usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count404
-\lst@skipnumbers=\count405
+\c@lstnumber=\count403
+\lst@skipnumbers=\count404
 \lst@framebox=\box122
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -855,81 +842,100 @@ Package: alltt 1997/06/16 v2.0g defines alltt environment
 (/usr/local/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen299
 \WF@size=\dimen300
-\c@WF@wrappedlines=\count406
+\c@WF@wrappedlines=\count405
 \WF@box=\box124
 \WF@everypar=\toks46
 Package: wrapfig 2003/01/31  v 3.6
 )
-\wraplines=\count407
+\wraplines=\count406
 \@authorfigbox=\box125
-\@authorfigboxdim=\skip109
-\biofigadjskip=\skip110
+\@authorfigboxdim=\skip104
+\biofigadjskip=\skip105
 )
-\csllabelwidth=\skip111
-\cslhangindent=\skip112
+\csllabelwidth=\skip106
+\cslhangindent=\skip107
 (/usr/local/texlive/2020/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks47
-\minrowclearance=\skip113
+\minrowclearance=\skip108
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 57.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count407
+\output=\toks48
+\linenoprevgraf=\count408
+\linenumbersep=\dimen301
+\linenumberwidth=\dimen302
+\c@linenumber=\count409
+\c@pagewiselinenumber=\count410
+\c@LN@truepage=\count411
+\c@internallinenumber=\count412
+\c@internallinenumbers=\count413
+\quotelinenumbersep=\dimen303
+\bframerule=\dimen304
+\bframesep=\dimen305
+\bframebox=\box126
+LaTeX Info: Redefining \\ on input line 3056.
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count408
-\l__pdf_internal_box=\box126
+\l__color_backend_stack_int=\count414
+\l__pdf_internal_box=\box127
 )
 
 LaTeX Warning: Unused global option(s):
-    [APA,STIX2COL].
+    [AMA,STIX1COL,APA,STIX2COL].
 
-No file index.aux.
+(./index.aux)
 \openout1 = `index.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 62.
 LaTeX Font Info:    Trying to load font information for LS1+stix on input line 
-56.
+62.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls1stix.fd
 File: ls1stix.fd 2015/04/17 v1.1.2-latex STIX LS1 font definitions
 )
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 62.
 LaTeX Font Info:    Trying to load font information for LS2+stix on input line 
-56.
+62.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls2stix.fd
 File: ls2stix.fd 2015/04/17 v1.1.2-latex STIX LS2 font definitions
 )
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    ... okay on input line 62.
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count409
-\scratchdimen=\dimen301
-\scratchbox=\box127
-\nofMPsegments=\count410
-\nofMParguments=\count411
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count412
-\MPscratchDim=\dimen302
-\MPnumerator=\count413
-\makeMPintoPDFobject=\count414
-\everyMPtoPDFconversion=\toks49
+\scratchcounter=\count415
+\scratchdimen=\dimen306
+\scratchbox=\box128
+\nofMPsegments=\count416
+\nofMParguments=\count417
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count418
+\MPscratchDim=\dimen307
+\MPnumerator=\count419
+\makeMPintoPDFobject=\count420
+\everyMPtoPDFconversion=\toks50
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -943,7 +949,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 56.
+Package hyperref Info: Link coloring ON on input line 62.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -953,11 +959,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count415
+\c@section@level=\count421
 )
-LaTeX Info: Redefining \ref on input line 56.
-LaTeX Info: Redefining \pageref on input line 56.
-LaTeX Info: Redefining \nameref on input line 56.
+LaTeX Info: Redefining \ref on input line 62.
+LaTeX Info: Redefining \pageref on input line 62.
+LaTeX Info: Redefining \nameref on input line 62.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -983,106 +989,69 @@ LaTeX Info: Redefining \nameref on input line 56.
 * \footskip=48.5pt
 * \marginparwidth=0.0pt
 * \marginparsep=0.0pt
-* \columnsep=12.0pt
+* \columnsep=0.0pt
 * \skip\footins=18.0pt plus 2.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumntrue
+* \@twocolumnfalse
 * \@twosidetrue
 * \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@maskedRefs=\count416
-(/usr/local/texlive/2020/texmf-dist/tex/latex/apacite/english.apc
-File: english.apc 2013/07/21 v6.03 apacite language file
-LaTeX Info: Redefining \BPBI on input line 129.
-LaTeX Info: Redefining \BHBI on input line 130.
+\c@lstlisting=\count422
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
+08.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-\c@lstlisting=\count417
 LaTeX Font Info:    Trying to load font information for LS1+stixscr on input li
-ne 102.
+ne 108.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls1stixscr.fd
 File: ls1stixscr.fd 2015/04/17 v1.1.2-latex STIX script LS1 font definitions
 )
 LaTeX Font Info:    Trying to load font information for LS2+stixex on input lin
-e 102.
+e 108.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls2stixex.fd
 File: ls2stixex.fd 2015/04/17 v1.1.2-latex STIX extentions LS2 font definitions
 
 )
 LaTeX Font Info:    Trying to load font information for LS1+stixfrak on input l
-ine 102.
+ine 108.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls1stixfrak.fd
 File: ls1stixfrak.fd 2015/04/17 v1.1.2-latex STIX fraktur LS1 font definitions
 )
 LaTeX Font Info:    Trying to load font information for LS1+stixbb on input lin
-e 102.
+e 108.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls1stixbb.fd
 File: ls1stixbb.fd 2015/04/17 v1.1.2-latex STIX blackboard LS1 font definitions
 
 )
 LaTeX Font Info:    Trying to load font information for LS2+stixcal on input li
-ne 102.
+ne 108.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls2stixcal.fd
 File: ls2stixcal.fd 2015/04/17 v1.1.2-latex STIX calligraphic LS2 font definiti
 ons
 )
 LaTeX Font Info:    Trying to load font information for LS1+stixsf on input lin
-e 102.
+e 108.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls1stixsf.fd
 File: ls1stixsf.fd 2015/04/17 v1.1.2-latex STIX sans-serif LS1 font definitions
 
 )
 LaTeX Font Info:    Trying to load font information for LS2+stixtt on input lin
-e 102.
+e 108.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls2stixtt.fd
 File: ls2stixtt.fd 2015/04/17 v1.1.2-latex STIX typewriter LS2 font definitions
 
 )
-Overfull \hbox (346.99213pt too wide) in paragraph at lines 102--102
+Overfull \hbox (346.99213pt too wide) in paragraph at lines 108--108
 [][] | || []|[][] 
  []
 
 LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 10
-2.
-
-Underfull \hbox (badness 2600) in paragraph at lines 107--118
-\T1/stix/m/n/10.03749 tackle them. Cli-mate change, envi-ron-men-tal degra-da-t
-ion,
- []
-
-
-Underfull \hbox (badness 1270) in paragraph at lines 107--118
-\T1/stix/m/n/10.03749 health cri-sis, edu-ca-tion inequal-i-ties, and employ-me
-nt and
- []
-
-
-Underfull \hbox (badness 1320) in paragraph at lines 119--143
-\T1/stix/m/n/10.03749 while strength-en-ing peo-ple's inno-va-tive and tech-no-
-log-i-cal
- []
-
-
-Underfull \hbox (badness 2865) in paragraph at lines 119--143
-\T1/stix/m/n/10.03749 com-pe-tences ([]\T1/stix/b/n/10.03749 Lewis2005?[]\T1/st
-ix/m/n/10.03749 ; []\T1/stix/b/n/10.03749 Gryszkiewicz2016?[]\T1/stix/m/n/10.03
-749 ; []Zivkovic
- []
-
-
-Underfull \hbox (badness 1237) in paragraph at lines 119--143
-\T1/stix/m/n/10.03749 edge, cre-at-ing dia-logue, mix-ing voices, allow-ing for
- new
- []
-
-
-Overfull \hbox (259.75394pt too wide) has occurred while \output is active
-[][] 
- []
-
+8.
 
 Overfull \vbox (6.46347pt too high) has occurred while \output is active []
 
@@ -1090,76 +1059,82 @@ Overfull \vbox (6.46347pt too high) has occurred while \output is active []
 
 \openout3 = `index.pag'.
 
-
-]
-Underfull \hbox (badness 1389) in paragraph at lines 144--169
-[]\T1/stix/m/n/10.03749 The chang-ing and per-me-able nature of the ``lab'' phe
--
+] [2] [3] [4] [5] [6] [7]
+LaTeX Font Info:    Trying to load font information for TS1+stix on input line 
+955.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ts1stix.fd
+File: ts1stix.fd 2015/04/17 v1.1.2-latex STIX TS1 font definitions
+) [8] [9] [10] [11] [12] [13] [14]
+Underfull \hbox (badness 4792) in paragraph at lines 1559--1563
+[][]\T1/stix/m/n/10.03749 Allen, J. P., and R. K. W. Van Der Velden. 2005. ``Th
+e Role of Self-Assessment in Mea-sur-ing Skills,'' Jan-
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 144--169
-\T1/stix/m/n/10.03749 teams in charge of lead-ing an inno-va-tion lab should be
+Underfull \hbox (badness 7186) in paragraph at lines 1559--1563
+\T1/stix/m/n/10.03749 uary, 1--25. [][]$https : / / api . semanticscholar . org
+ / CorpusID : 153922219 % 20https : / / cris . maastrichtuniversity . nl / en /
+ publications /
+ []
 
+[15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 1823--1828
+[][]\T1/stix/m/n/10.03749 Puttick, Ruth, Peter Baeck, and Philip Col-li-gan. 20
+14. \T1/stix/m/it/10.03749 I-Teams: The Teams and Funds Mak-
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 144--169
-\T1/stix/m/n/10.03749 able to deal with ambi-gu-i-ties, inte-grate mul-ti-ple p
-er-spec-
+Underfull \hbox (badness 10000) in paragraph at lines 1823--1828
+\T1/stix/m/it/10.03749 ing Inno-va-tion Hap-pen in Gov-ern-ments Around the Wor
+ld\T1/stix/m/n/10.03749 . Nesta. [][]$https : / / www . nesta . org . uk / repo
+rt /
  []
 
 
-Underfull \hbox (badness 2653) in paragraph at lines 144--169
-[]\T1/stix/b/n/10.03749 McGann2019?[]\T1/stix/m/n/10.03749 ). There is an incre
-as-ing inter-est in how
+Underfull \hbox (badness 4859) in paragraph at lines 1900--1905
+[][]\T1/stix/m/n/10.03749 Westley, F., S. Laban, C. Rose, K. McGowan, K. Robin-
+son, O. Tjornbo, and M. Tovey. 2015. ``Social Inno-
  []
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 144--169
-\T1/stix/m/n/10.03749 even com-mu-ni-ties are con-tin-u-ously turn-ing to the i
-mple-
+Underfull \hbox (badness 10000) in paragraph at lines 1900--1905
+\T1/stix/m/n/10.03749 va-tion Lab Guide.'' Water-loo Insti-tute for Social Inno
+-va-tion; Resilience: Water-loo. [][]$https : / / uwaterloo . ca /
  []
 
-
-Underfull \hbox (badness 2418) in paragraph at lines 170--196
-\T1/stix/m/n/10.03749 the adop-tion of open inno-va-tion prac-tices became more
-
- []
-
-
-Underfull \hbox (badness 1205) in paragraph at lines 223--236
-\T1/stix/m/n/10.03749 pointed out that com-pe-tence pro-files are instru-men-ta
-l for
- []
-
-
-Overfull \hbox (259.75394pt too wide) has occurred while \output is active
-[][] 
- []
-
-[2]
-Overfull \hbox (259.75394pt too wide) has occurred while \output is active
-[][] 
- []
-
-[3]
-
-! Package longtable Error: longtable not in 1-column mode.
-
-See the longtable package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.484 \begin{longtable}
-                       [c]{|p{1.00in}|p{4.00in}} 
+No file index.bbl.
+[17] [18] (./index.aux) ) 
 Here is how much of TeX's memory you used:
- 19337 strings out of 479023
- 272985 string characters out of 5859412
- 596798 words of memory out of 5000000
- 36432 multiletter control sequences out of 15000+600000
- 490138 words of font info for 128 fonts, out of 8000000 for 9000
+ 19324 strings out of 479023
+ 274109 string characters out of 5859412
+ 607598 words of memory out of 5000000
+ 36340 multiletter control sequences out of 15000+600000
+ 505061 words of font info for 135 fonts, out of 8000000 for 9000
  1167 hyphenation exceptions out of 8191
- 86i,10n,88p,329b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,10n,88p,1246b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{ref-Mantere2006} has been 
+referenced but does not exist, replaced by a fixed one
 
-!  ==> Fatal error occurred, no output PDF file produced!
+pdfTeX warning (dest): name{ref-Ward2000} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{ref-Kelley} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{ref-Robert1982} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/stix/stix-ts1.enc}{/usr/loc
+al/texlive/2020/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc}{/usr/local/texlive
+/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2
+020/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.pfb></usr/local/texlive
+/2020/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb></usr/local/tex
+live/2020/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb></usr/loca
+l/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb>
+Output written on index.pdf (18 pages, 242222 bytes).
+PDF statistics:
+ 667 PDF objects out of 1000 (max. 8388607)
+ 636 compressed objects within 7 object streams
+ 123 named destinations out of 1000 (max. 500000)
+ 185 words of extra memory for PDF output out of 10000 (max. 10000000)
+
