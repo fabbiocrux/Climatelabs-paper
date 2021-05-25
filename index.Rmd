@@ -1,52 +1,47 @@
 ---
-title: "Exploring team roles for social innovation labs: toward a competence-based self-assessment approach"
-classoption: APA,STIX2COL
+title: 'Exploring team roles for social innovation labs: toward a competence-based
+  self-assessment approach'
 author:
 - name: Ferney Osorio*
   email: ferney.osorio-bustamante@univ-lorraine.fr
   num: ERPI,UN
-#   footnote: 1
 - name: Fabio A. Cruz Sanchez
   num: ERPI
 - name: Laurent Dupont
   num: ERPI
 - name: Mauricio Camargo
   num: ERPI
-    
-address:
-- num: ERPI
-  org: Université de Lorraine - ERPI -F-54000, Nancy, France,   
-- num: UN
-  org: Departamento de Ingeniería de Sistemas e Industrial, Universidad Nacional de Colombia, Bogotá, Colombia
-corres: "*Corresponding author name, This is sample corresponding address. \\email{authorone@gmail.com}"
-presentaddress: This is sample for present address text this is sample for present address text
-authormark: Uthor \emph{et al}.
-articletype: Research article
-received: 2017-01-01
-revised: 2017-02-01
-accepted: 2017-03-01
-abstract: |
-  Recently, there has been a great interest in the development of innovation labs as intermediate means to fostering social innovative solutions to complex problems. However, the composition of innovation lab teams, including the underlying competences and main roles within such organizational structures has yet to be understood. This aspect is of paramount importance at the early designing phase to foster the future development and consolidation of such initiatives. A competence-based role model is proposed as a basis for guiding the conformation of social innovation lab teams. The structure of the model is grounded on (1) a set of 14 competences for social innovation labs drawn from the literature, (2) a comparison of 7 frameworks of innovation team roles and (3) the authors' experience. The model we propose is then operationalized using a self-assessment approach, which consists of an online questionnaire and a retrospective workshop to help team members position themselves in terms of the potential role they could play within their team, but also to elicit improvement strategies. The self-assessment methodology is then applied to 10 Latin American nascent social innovation lab teams with a focus on climate change challenges. Finally, we discuss the insights and implications of this exploratory study for both researchers and practitioners.
-journal: "Creativity and Innovation Management"
-#date: "`r Sys.Date()`"
-keywords: "innovation lab, social innovation, innovation team roles, innovation competences, self-assessment"
-linenumbers: true
-#numbersections: true
-#csl: apa-6th-edition.csl
-bibliography: CAIM2021.bib
-#bibliography: bibfile.bib
+classoption: APA,STIX2COL
 output:
+  html_document:
+    df_print: paged
   pdf_document:
     template: template-Wiley.tex
-    keep_tex: TRUE
-# output:
-#   rticles::sim_article:
-#     keep_tex: TRUE
-#always_allow_html: true
+    keep_tex: yes
+corres: '*Corresponding author name, This is sample corresponding address. \email{authorone@gmail.com}'
+presentaddress: This is sample for present address text this is sample for present
+  address text
+authormark: Uthor \emph{et al}.
+articletype: Research article
+received: '2017-01-01'
+revised: '2017-02-01'
+accepted: '2017-03-01'
+abstract: |
+  Recently, there has been a great interest in the development of innovation labs as intermediate means to fostering social innovative solutions to complex problems. However, the composition of innovation lab teams, including the underlying competences and main roles within such organizational structures has yet to be understood. This aspect is of paramount importance at the early designing phase to foster the future development and consolidation of such initiatives. A competence-based role model is proposed as a basis for guiding the conformation of social innovation lab teams. The structure of the model is grounded on (1) a set of 14 competences for social innovation labs drawn from the literature, (2) a comparison of 7 frameworks of innovation team roles and (3) the authors' experience. The model we propose is then operationalized using a self-assessment approach, which consists of an online questionnaire and a retrospective workshop to help team members position themselves in terms of the potential role they could play within their team, but also to elicit improvement strategies. The self-assessment methodology is then applied to 10 Latin American nascent social innovation lab teams with a focus on climate change challenges. Finally, we discuss the insights and implications of this exploratory study for both researchers and practitioners.
+journal: Creativity and Innovation Management
+keywords: innovation lab, social innovation, innovation team roles, innovation competences,
+  self-assessment
+linenumbers: yes
+bibliography: CAIM2021.bib
+address:
+- num: ERPI
+  org: Université de Lorraine - ERPI -F-54000, Nancy, France,
+- num: UN
+  org: Departamento de Ingeniería de Sistemas e Industrial, Universidad Nacional de
+    Colombia, Bogotá, Colombia
 link-citations: yes
 linkcolor: blue
-header-includes:
-  - \usepackage{xcolor}
+header-includes: \usepackage{xcolor}
 ---
 
 ```{r, include=FALSE, echo=FALSE}
@@ -102,7 +97,7 @@ T1 <- read.csv("Tables/Table_1.csv")
 set_flextable_defaults(fonts_ignore=TRUE)
 
 T1 %>% flextable() %>% 
-  set_caption("SI Lab list of competences retrieved from [@Wascher2018]") %>%
+  set_caption("SI Lab list of competences retrieved from Wascher et al., (2018)") %>%
   fontsize(size = 9) %>% 
   width(j=1:2, width = c(1, 4)) %>% 
   theme_zebra()
@@ -113,13 +108,13 @@ T1 %>% flextable() %>%
 
 Reflecting on what roles or behaviors are required to facilitate innovation processes within an organization is not at all a new idea. One can refer to the notion of "champion" back in the 60's where the success of the innovation process was attributed to the one single person who was willing to fail for a dubious idea but capable of reaching success [@Roberts1982; @Jenssen2004]. However, nowadays the aim of reflecting on innovation roles is no longer to create heroes that prevail against all odds. Instead, it relies on building strong teams that are aware of their strengths and weaknesses, helping them find ways to overcome the barriers paving the way to the implementation of the intended innovation process [@Gemunden2007]. Indeed, innovation does not originate and sustain itself, rather, it happens thanks to the people who make it possible through teamwork that push the boundaries of their imagination, resilience and perseverance [@Kelley2005].
 
-In this sense in particular, the literature on innovation teams and roles has evolved, as innovation processes have become more open, collaborative and social. This has also been the case for the roles needed to facilitate such processes. By delving into the literature on innovation teams we intend to illustrate the diversity of roles that members of an innovation team may play, and which could subsequently inspire the configuration of lab teams. Hence, seven models of innovation roles emerge from the literature (Figure 1), models which we will now discuss.
+In this sense in particular, the literature on innovation teams and roles has evolved, as innovation processes have become more open, collaborative and social. This has also been the case for the roles needed to facilitate such processes. By delving into the literature on innovation teams we intend to illustrate the diversity of roles that members of an innovation team may play, and which could subsequently inspire the configuration of lab teams. Hence, seven models of innovation roles emerge from the literature (Table 2), models which we will now discuss.
 
 One of the earliest innovation role models is the one proposed by [@Roberts1982]. This model consists of five roles that are needed to fulfil the critical functions in a technology-based innovation process. These are the *idea generator*, the *entrepreneur* or *champion*, the *project leader*, the *gatekeeper* and the *coach*. The intention was to highlight the key functions that were not always explicit in formal job structures. This also acknowledges the fact that, depending on the size of the team or the organization, some roles need to be filled by more than one person, while some individuals can perform more than one role, and that ultimately, the roles a person fills will change over the course of their career. More importantly, beyond considering a role as purely functional, one should consider a person's behavior within a team. Under the premise that people's useful behaviors can be grouped into a set of related clusters, in her book (originally published in 1993) [@Belbin2010] condenses the nine team roles which are an effective contribution to team performance: *plant*, *resource investigator*, *coordinator*, *shaper*, *monitor evaluator*, *teamworker*, *implementer*, *completer finisher* and *specialist*. Even though the Belbin team roles are not exclusive to innovation teams, they represent an important part of team theory that should be taken into consideration.
 
 More recently, @Hering2005 present eight innovation roles, placing emphasis on the ones required for a generic innovation process. The authors detailed the features of what can be expected of these roles, rather than just titles or job descriptions. According to them, *connector*, *librarian*, *framer*, *judge*, *prototyper*, *monitor* and *storyteller* are the roles that should be sought when putting together an innovation team. The organization's commitment and a belief system are also deemed critical to creating the time and the resources necessary for innovation teams to deal with the uncertainty pertaining to any innovation process. Alternatively, @Kelley2005 published *Ten Faces of Innovation* based on their experiences at IDEO. The book presents ten descriptions of condensed persona meant to inspire which roles members of an organization should play to foster creativity and innovation. They consider that each role or persona helps bring specific values, tools, skills to the table, and therefore that it is important to ensure they are present in any innovation team. These ten roles are grouped by *learners* (anthropologist, experimenter and cross-pollinator), *organizers* (hurdler, collaborator and director) and *builders* (experience architect, set designer, caregiver and storyteller).
 
-```{r Fig1, fig.cap="Role models of innovation teams over the years"}
+```{r Table2, fig.cap=" Table 2 - Role models of innovation teams over the years"}
 
 ```
 
@@ -131,22 +126,22 @@ Throughout this review of the literature, one may observe that despite the diver
 
 # Methodology
 
-Throughout the theoretical background presented above, we have explored the principles behind the notion of SI labs, along with the dynamics that lab teams must deal with in such contexts. Several questions arose as to which roles would allow a SI lab team to be better prepared to accomplish their mission, as well as what set of competences would be necessary for these teams to thrive under such conditions. Accordingly, seven innovation role models were retrieved from the literature on innovation teams, as well as a set of 14 key competences for SI lab teams. However, because of the lack of research work on the performance of innovation lab managerial teams, and more specifically on teams in the SI context, through this study we aim to establish a connection between innovation competence theory and actual innovation teams in order to hypothesize the essential elements that should be considered when putting together a SI lab team. To this end, we designed a four-stage process, as shown in Figure 2.
+Throughout the theoretical background presented above, we have explored the principles behind the notion of SI labs, along with the dynamics that lab teams must deal with in such contexts. Several questions arose as to which roles would allow a SI lab team to be better prepared to accomplish their mission, as well as what set of competences would be necessary for these teams to thrive under such conditions. Accordingly, seven innovation role models were retrieved from the literature on innovation teams, as well as a set of 14 key competences for SI lab teams. However, because of the lack of research work on the performance of innovation lab managerial teams, and more specifically on teams in the SI context, through this study we aim to establish a connection between innovation competence theory and actual innovation teams in order to hypothesize the essential elements that should be considered when putting together a SI lab team. To this end, we designed a four-stage process, as shown in Figure 1.
 
 First, based on the literature reviewed, we proposed an adapted role model. Because none of the previous role models for innovation teams are rooted either in SI or in innovation labs, our aim was to use the 14 identified competences to establish a model proposition adapted to the context of our research. Following this, the model proposed was defined operationally as an assessment tool (online questionnaire) that was ultimately applied using a self-assessment approach. Given the practical motivation behind this exploratory study, which is to assist 10 Latin American university teams in setting up their own SI lab team in the framework of the Erasmus+ Climate Labs project, we opted for a self-assessment twin-track approach. The first goal was to use this approach to trigger reflection processes that would allow the university teams to increase their awareness of their actual position with respect to the expected roles. And the second goal was to have a comprehensive role characterization at the early stage of the project, for every lab team and according to their perception of the degree of mastery of the identified competences.
 
 Due to the transcontinental nature of the Climate Labs project, the self-assessment approach was applied virtually by means of the online questionnaire and an online workshop. The proposed approach was designed so that each lab team member (including professors, researchers, students, and administrative staff) could be part of the process. We received a total of 65 answers along with the workshop results for each team. We then analyzed and discussed the results and insights in order to draw conclusions that could be used to provide guidelines for the future of the Climate Labs project but also to further develop this study.
 
-```{r Fig2}
+```{r Fig1, fig.cap="Methodology overview"}
 
 ```
 
 # Proposition of a competence-based role model for SI Lab teams
 
-Despite several insights from empirical studies and different statements regarding which functions or behaviors are possibly found in an innovation team, propositions and explanations fall short of expectations when it comes to the specificity of innovation lab teams. Therefore, we have reason to believe that by establishing a clearer connection between competences for SI labs and innovation team theory a model can be proposed. First, drawing from the 14 competences proposed by [@Wascher2018], we established a categorization according to the main functions that could be set forth. Based on the literature and according to the authors' knowledge and experience, four competence categories were identified, as illustrated in Table 2. This was done in consideration of the competences that most contribute to one of the following functions: (1) innovation process orchestration, (2) materialize systemic solutions, (3) spark connections and new ideas, and those that contribute to (4) organizing and measuring results.
+Despite several insights from empirical studies and different statements regarding which functions or behaviors are possibly found in an innovation team, propositions and explanations fall short of expectations when it comes to the specificity of innovation lab teams. Therefore, we have reason to believe that by establishing a clearer connection between competences for SI labs and innovation team theory a model can be proposed. First, drawing from the 14 competences proposed by [@Wascher2018], we established a categorization according to the main functions that could be set forth. Based on the literature and according to the authors' knowledge and experience, four competence categories were identified, as illustrated in Table 3. This was done in consideration of the competences that most contribute to one of the following functions: (1) innovation process orchestration, (2) materialize systemic solutions, (3) spark connections and new ideas, and those that contribute to (4) organizing and measuring results.
 
-```{r table2}
-T2 <- read_csv("Tables/Table_2.csv")
+```{r table3}
+T2 <- read_csv("Tables/Table_3.csv")
 
 
 T2 %>% flextable() %>% 
@@ -157,15 +152,15 @@ T2 %>% flextable() %>%
   
 ```
 
-Then, in order to gain a finer sense of how to better define these competences for innovation teams and their roles, we compared the four competence categories to the innovation roles found in the literature. At this point, we looked for similarities between the roles and behaviors that were historically recognized among innovation teams and the competences for SI labs. We found that all four categories were present in the seven innovation team role models (see Table 3). It is worth remembering that our focus for this study is the composition of lab teams. This means that while proceeding to this comparison our attention remained focused on the roles at the core of innovation lab management. This is why a fifth category emerges as "external roles", which refer to users or external parties that revolve around the network of lab stakeholders. By no means is our intent to diminish the importance of these roles, on the contrary, we would like to mention that these external roles should definitely be studied in depth at the further stages of the research. However, considering the usually relatively small size of innovation lab teams, especially in the early stages, we believe that these four categories constitute a comprehensive and pragmatic basis for this study.
+Then, in order to gain a finer sense of how to better define these competences for innovation teams and their roles, we compared the four competence categories to the innovation roles found in the literature. At this point, we looked for similarities between the roles and behaviors that were historically recognized among innovation teams and the competences for SI labs. We found that all four categories were present in the seven innovation team role models (see Table 4). It is worth remembering that our focus for this study is the composition of lab teams. This means that while proceeding to this comparison our attention remained focused on the roles at the core of innovation lab management. This is why a fifth category emerges as "external roles", which refer to users or external parties that revolve around the network of lab stakeholders. By no means is our intent to diminish the importance of these roles, on the contrary, we would like to mention that these external roles should definitely be studied in depth at the further stages of the research. However, considering the usually relatively small size of innovation lab teams, especially in the early stages, we believe that these four categories constitute a comprehensive and pragmatic basis for this study.
 
-```{r table3}
+```{r table4, fig.cap="Innovation Role Model Comparison"}
 
 ```
 
-Based on the previous work, we propose a competence-based role model for SI labs (see Figure 3). This model is intended for the establishment of a minimal base of competences and roles that a SI lab team should bear in mind during the implementation of their project. A general description for each of the proposed roles is outlined below.
+Based on the previous work, we propose a competence-based role model for SI labs (see Figure 2). This model is intended for the establishment of a minimal base of competences and roles that a SI lab team should bear in mind during the implementation of their project. A general description for each of the proposed roles is outlined below.
 
-```{r Fig3}
+```{r Fig2, fig.cap="Competence-based role model proposition"}
 
 ```
 
@@ -210,9 +205,9 @@ Innovation lab initiatives can often be seen as fuzzy and accessory. Managers ar
 
 The next step was to operationalize the proposed role model. Rather than relying entirely on a rationalistic approach where functional roles are predefined and team members are expected to fit into the assumptions, we sought to provide a reflection and awareness tool for lab teams as they design and implement their SI lab [@Sandberg2000]. In this sense, a self-assessment approach is instrumental in understanding the degree to which a person considers they are competent for a determined task or in a specific situation, while reflection processes are sparked [@Sandberg2000; @Allen2005]. An important advantage of following a self-assessment approach is that individuals have access to information about themselves that might otherwise be more difficult to access [@Allen2005]. However, it is also important to be aware that relying on self-knowledge often leads to problems regarding the reliability and validity of results [@Ward2002].
 
-For this reason, the operationalization of our theoretical model first and foremost included the definition of short descriptions for each competence (see Appendix A), which constitute the basis of an online questionnaire as the first step to self-assessment. Accordingly, out of a total of 30 questions in the online questionnaire, 23 questions are directly related to the model criteria, 6 general questions are used for profiling purposes and the last question is an open one to collect feedback. Furthermore, and based on this structure, the questionnaire was also made available in three languages: Spanish, Portuguese and English. In terms of self-assessment levels, a scale from 0 to 5 with anchoring phrases was applied (see Table 4). In this scale, 1 corresponds to the level where respondents understand what the competence is but do not practice it, and 5, where they believe they have mastered the competence and are capable of developing new ways of applying it [@Dreyfus1986]. The 0 level was introduced for people who were not aware of, or did not understand what the competence was about, so as to reduce unintentional measurement errors [@Allen2005]. In order to address any ambiguity or lack of clarity, a test was performed with several members of the consortium, prior to applying the study to the Latin American teams. Adjustments were then made based on the feedback and test results. The English version of the final questionnaire can be accessed at <https://forms.gle/iZ1Lwyt1KUqrerb57>.
+For this reason, the operationalization of our theoretical model first and foremost included the definition of short descriptions for each competence (see Appendix A), which constitute the basis of an online questionnaire as the first step to self-assessment. Accordingly, out of a total of 30 questions in the online questionnaire, 23 questions are directly related to the model criteria, 6 general questions are used for profiling purposes and the last question is an open one to collect feedback. Furthermore, and based on this structure, the questionnaire was also made available in three languages: Spanish, Portuguese and English. In terms of self-assessment levels, a scale from 0 to 5 with anchoring phrases was applied (see Table 5). In this scale, 1 corresponds to the level where respondents understand what the competence is but do not practice it, and 5, where they believe they have mastered the competence and are capable of developing new ways of applying it [@Dreyfus1986]. The 0 level was introduced for people who were not aware of, or did not understand what the competence was about, so as to reduce unintentional measurement errors [@Allen2005]. In order to address any ambiguity or lack of clarity, a test was performed with several members of the consortium, prior to applying the study to the Latin American teams. Adjustments were then made based on the feedback and test results. The English version of the final questionnaire can be accessed at <https://forms.gle/iZ1Lwyt1KUqrerb57>.
 
-```{r table4, fig.cap="Self-assessment scale"}
+```{r table5, fig.cap="Self-assessment scale"}
 
 ```
 
@@ -226,9 +221,9 @@ As previously mentioned, this study is conducted as part of the Climate Labs pro
 
 The members of each team were asked to self-assess their SI lab competences individually by means of the online questionnaire, during the months of April and May. Later in June, a webinar was held with all the teams in order to share the preliminary results and introduce the retrospective activity as the second part of the methodology. Each university team was handed a customized report consisting mainly of their competence profile according to our four generic role propositions: Visionary, Maker, Facilitator and Manager. The intention was to trigger a reflection process to identify strengths and points of improvement and discuss them with the team. Based on the results, lab members were also asked to state which of the proposed roles they identified with the most and the least. Finally, they were requested to ideate potential strategies for filling their gaps as a lab team.
 
-A total of 65 participants completed both the questionnaire and the workshop. Lab team size oscillated between 4 and 13 members. Among the respondents there were faculty members, administration staff, researchers and students, the latter category being only represented by three undergraduate students and one doctoral student. This was mainly due to the constraints of the global COVID-19 health crisis, with repercussions on each university's academic schedule. Nevertheless, the sample is still representative of who will lead lab implementation, which guarantees that insights drawn from this analysis will provide a real picture of a SI lab team in its early stages. Table 5 summarizes team composition by university.
+A total of 65 participants completed both the questionnaire and the workshop. Lab team size oscillated between 4 and 13 members. Among the respondents there were faculty members, administration staff, researchers and students, the latter category being only represented by three undergraduate students and one doctoral student. This was mainly due to the constraints of the global COVID-19 health crisis, with repercussions on each university's academic schedule. Nevertheless, the sample is still representative of who will lead lab implementation, which guarantees that insights drawn from this analysis will provide a real picture of a SI lab team in its early stages. Table 6 summarizes team composition by university.
 
-```{r table5, fig.cap="Lab team composition and thematic focus"}
+```{r table6, fig.cap="Lab team composition and thematic focus"}
 
 ```
 
@@ -238,23 +233,23 @@ There is interest in measuring the consistency of the tool. To do so, we chose t
 
 ## Competence self-assessment results
 
-Figure 4 presents the results of the self-assessment for the whole sample (black line). Three additional profiles are shown (green, blue and orange dotted lines) which correspond to the three lab team cases that will be analyzed further in this section. Here, the radar is used to visualize the median-based profiles to provide a measure of the central trend among the sample (or specific team). The median is shown for each of the 23 questions to help the teams infer where strengths or weaknesses might be. From a general perspective, some points are worth describing. The overall sample of participants declared having a high level of competence for guiding others (level 4) in activities such as moderation, research methods, networking and self-organization. This was to be expected as there is a significant number of professors and directors among the respondents, who are probably more trained and experienced than team members holding different positions. However, one result worth highlighting is the low level of competence in ICT and entrepreneurial thinking, suggesting the existence of common gaps that could pose challenges for the future development of a SI lab.
+Figure 3 presents the results of the self-assessment for the whole sample (black line). Three additional profiles are shown (green, blue and orange dotted lines) which correspond to the three lab team cases that will be analyzed further in this section. Here, the radar is used to visualize the median-based profiles to provide a measure of the central trend among the sample (or specific team). The median is shown for each of the 23 questions to help the teams infer where strengths or weaknesses might be. From a general perspective, some points are worth describing. The overall sample of participants declared having a high level of competence for guiding others (level 4) in activities such as moderation, research methods, networking and self-organization. This was to be expected as there is a significant number of professors and directors among the respondents, who are probably more trained and experienced than team members holding different positions. However, one result worth highlighting is the low level of competence in ICT and entrepreneurial thinking, suggesting the existence of common gaps that could pose challenges for the future development of a SI lab.
 
-```{r Fig4, fig.cap="Global profile based on results from competence self-assessment"}
+```{r Fig3, fig.cap="Global profile based on results from competence self-assessment"}
 
 ```
 
 ## Retrospective results: A cross-case analysis
 
-Based on the results of the self-assessment, the lab teams were invited to reflect on their competence profile while the role model was introduced along with the workshop steps. Due to space limitations, the results of the second part are described through three cases: Labs H, I and J. These cases were chosen because as a result of the self-assessment, they showed a lack or a low representation of the specific roles among their team members. This allows us to frame the analysis in terms of what conceptions the methodology elicits when specific roles are missing. A cross-case analysis is then conducted to discuss noteworthy observations and common elements in the way lab teams interpret results, self-positioning and what kind of actions or points of improvement were identified. Table 6 presents a summary of the retrospective results for the three chosen cases. We focused on analyzing and understanding how participants related to our role model and which self-declared roles emerged for each case. We were also interested in exploring how consistent (or not) the competence profile results were with the self-declared roles, as well as with the identified improvement actions. For instance, do teams lacking a specific role propose equivalent actions to fill that gap? Besides hiring or involving new people in the team, what other reflections or improvement strategies does the methodology elicit? With these questions in mind, we discuss some of the main insights in the rest of this section.
+Based on the results of the self-assessment, the lab teams were invited to reflect on their competence profile while the role model was introduced along with the workshop steps. Due to space limitations, the results of the second part are described through three cases: Labs H, I and J. These cases were chosen because as a result of the self-assessment, they showed a lack or a low representation of the specific roles among their team members. This allows us to frame the analysis in terms of what conceptions the methodology elicits when specific roles are missing. A cross-case analysis is then conducted to discuss noteworthy observations and common elements in the way lab teams interpret results, self-positioning and what kind of actions or points of improvement were identified. Table 7 presents a summary of the retrospective results for the three chosen cases. We focused on analyzing and understanding how participants related to our role model and which self-declared roles emerged for each case. We were also interested in exploring how consistent (or not) the competence profile results were with the self-declared roles, as well as with the identified improvement actions. For instance, do teams lacking a specific role propose equivalent actions to fill that gap? Besides hiring or involving new people in the team, what other reflections or improvement strategies does the methodology elicit? With these questions in mind, we discuss some of the main insights in the rest of this section.
 
-```{r table6, fig.cap= "Summarized results of retrospective"}
+```{r table7, fig.cap= "Summarized results of retrospective"}
 
 ```
 
 The first part of the activity consisted in declaring which role each participant related with the most according to the role model and their competence profile. Some participants declared they identified with multiple roles whereas others with only one. Regarding the cases selected for this analysis, each case shows a relative low representation of one role in particular. For instance, Lab I does not have a self-declared maker. Lab J has only two visionaries and Lab H has only one facilitator and one maker. It is interesting to see whether the strengths or weaknesses correspond or not to their team profile. This is important, since the fact of failing to have someone identifying with, or related to, a specific role does not necessarily mean that they are not competent as a team in that respect.
 
-In terms of strengths, the exercise seems to reveal direct links with the team's profile where high levels of competence are identified, as well as enable them to share information regarding additional key points that characterize them as a team. For example, aspects such as time working together as a team, the degree of SI and entrepreneurship institutionalization at the university and their strong links with the State government and local actors were highlighted by Lab I as their main strengths. Perhaps one remarkable characteristic is the fact that, as they stated, "all our students have a mandatory federal duty to dedicate 480 hours to social community service, where we can count on their talent and work". This is something that could prove useful for the lab once it is in operation. The team of Lab J recognizes themselves as "a Maker Team with great research capacity", as clearly the majority of its members self-identified as makers, which corresponds to high levels of competence in research and design according to their global profile (see Figure 4). They also stress the "good positioning" of several of their members in terms of management and decision-making at their university. Remarkably, despite a team profile that evidences a high level of competence for facilitation (see Figure 4), only one member of Lab H self-identified as facilitator. Still, as part of their strengths, they consider themselves "inclusive and respectful in moderating differences". They also outline systemic thinking, project management, pedagogical methods, networking and communications as strong points, as well as their knowledge in environmental disciplines and sustainable development.
+In terms of strengths, the exercise seems to reveal direct links with the team's profile where high levels of competence are identified, as well as enable them to share information regarding additional key points that characterize them as a team. For example, aspects such as time working together as a team, the degree of SI and entrepreneurship institutionalization at the university and their strong links with the State government and local actors were highlighted by Lab I as their main strengths. Perhaps one remarkable characteristic is the fact that, as they stated, "all our students have a mandatory federal duty to dedicate 480 hours to social community service, where we can count on their talent and work". This is something that could prove useful for the lab once it is in operation. The team of Lab J recognizes themselves as "a Maker Team with great research capacity", as clearly the majority of its members self-identified as makers, which corresponds to high levels of competence in research and design according to their global profile (see Figure 3). They also stress the "good positioning" of several of their members in terms of management and decision-making at their university. Remarkably, despite a team profile that evidences a high level of competence for facilitation (see Figure 4), only one member of Lab H self-identified as facilitator. Still, as part of their strengths, they consider themselves "inclusive and respectful in moderating differences". They also outline systemic thinking, project management, pedagogical methods, networking and communications as strong points, as well as their knowledge in environmental disciplines and sustainable development.
 
 As already perceived in the global profile, ICT competence is a common weakness that also appears in the retrospective for all three cases. In addition, Lab H and J identify entrepreneurial thinking as limited or with low experience whereas Lab I as well as H raised concerns regarding the slow and complicated administrative processes at the university. Specifically, according to their competence profile, team members of Lab H acknowledge a lack of experience in designing and prototyping innovation projects, and further, in building solutions to real problems in multi-stakeholder contexts. Similarly, the Lab I team reveals that this is their first experience in a lab that combines SI and climate change. They consider this a weakness as SI practices are not yet commonly included to the academic work of other faculties. In addition, they highlight that the lack of an emergency culture regarding climate action could be a barrier when it comes to bringing change or actions in their institution at the operational level. Lastly, the team of Lab J expressed the need for consolidating their visionary capabilities along with systemic thinking and evaluation methodologies. They also pointed out time management and the limited number of people available as weaknesses, because their team members were concurrently engaged in several other projects.
 
