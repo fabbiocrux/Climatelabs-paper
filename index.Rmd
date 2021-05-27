@@ -63,6 +63,7 @@ library(officer)
 
 # Introduction
 
+
 Today's most critical challenges need to be addressed through systemic methods. Climate change, environmental degradation, health crisis, education inequalities, as well as employment issues and the reduction of poverty are some examples of those wicked problems characterized by their complexity, interdependence and contextual specificity [@Zivkovic2018]. Social Innovation (SI) then emerges as a branch of research, not only to help understand these societal issues but to facilitate the development of systemic strategies toward a transformative change of social practices, in order to solve social problems and meet local demands [@Strasser2019].
 
 Specifically, the notion of SI Labs has recently become a subject of interest in the literature. SI labs emerge as an approach to keep up with the increasing changes and accumulating challenges that society faces, where more conventional approaches, which rely solely on techno-centric approaches, are insufficient [@Westley2015; @Jezierski2014]. Innovation labs are defined as semi-autonomous organizations dedicated to facilitating innovation processes by allowing multi-stakeholder groups to collaborate openly, with the purpose of creating and prototyping solutions to systemic challenges, while strengthening people's innovative and technological competences [@Lewis2005; @Gryszkiewicz2016; @Zivkovic2018]. In this sense, SI labs act as cross-pollinators of knowledge by creating dialogue, mixing voices and allowing for the emergence of new ideas and their translation into alternative solutions [@Wascher2019]. The manner in which these organizational structures operate often depends on the problem that is being addressed and on the context. This means that the people, the organizations and even the methods applied within a SI lab are in constant evolution [@Wascher2018].
@@ -323,7 +324,63 @@ There is interest in measuring the consistency of the tool. To do so, we chose t
 Figure 3 presents the results of the self-assessment for the whole sample (black line). Three additional profiles are shown (green, blue and orange dotted lines) which correspond to the three lab team cases that will be analyzed further in this section. Here, the radar is used to visualize the median-based profiles to provide a measure of the central trend among the sample (or specific team). The median is shown for each of the 23 questions to help the teams infer where strengths or weaknesses might be. From a general perspective, some points are worth describing. The overall sample of participants declared having a high level of competence for guiding others (level 4) in activities such as moderation, research methods, networking and self-organization. This was to be expected as there is a significant number of professors and directors among the respondents, who are probably more trained and experienced than team members holding different positions. However, one result worth highlighting is the low level of competence in ICT and entrepreneurial thinking, suggesting the existence of common gaps that could pose challenges for the future development of a SI lab.
 
 ```{r Fig3, fig.cap="Global profile based on results from competence self-assessment"}
+# ------- figure- ---
+fig3 <- readxl::read_excel("data/Data-competences-onlyradar.xlsx")
+#names(fig3)
+labs <- fig3 %>% pull(Profile) 
 
+Climatelabs <- 
+  fig3 %>% filter(Profile %in% labs[5:14]) %>% 
+  mutate(Country = c(rep("Colombia",5), rep("Brazil",3), rep("Mexico",2))) %>% 
+  select(Country, Profile, Medi.1:Eval.1) %>% 
+  pivot_longer(cols = Medi.1:Eval.1 )
+  
+# Orden of the factors
+Orden <- Climatelabs %>% pull(name) 
+Orden <- Orden[1:23]
+Orden <- factor(Orden, Orden)
+
+Climatelabs$name <- factor(Climatelabs$name, Orden)
+
+Climatelabs %>% filter(Profile %in% labs[12:14]) %>% 
+  ggplot() + 
+  #geom_line(data = Climatelabs_bg,  aes(x = name, y = value , group = Perfil), color = "grey75",size = .7) +
+  #geom_line( aes(x = name, y = value , group = Profile), color = "#0b53c1",size = .7) +
+  #geom_point(aes(x = name, y = value), shape = 21, fill = "white", color = "#0b53c1", stroke = 1.3,  size = 2.8) +
+  geom_line( aes(x = name, y = value , color = Profile, group = Profile), size = .7) +
+  geom_point(aes(x = name, y = value, color = Profile, group = Profile), shape = 21, fill = "white", stroke = 1.3,  size = 2.8) +
+  #facet_grid( rows = vars(Country) , scales ="free_y")  +
+  #coord_flip() + 
+  #coord_cartesian(clip = "off") + 
+  #facet_wrap(vars(Country) ~ vars(Profile)) + 
+  #facet_grid( cols = vars(Profile) , scales ="free_y")  +
+  theme_minimal() +
+  ggplot2::annotate("rect", xmin=c(1,8,13,19), xmax=c(7,12,19,23), 
+                           ymin=rep(1,4), ymax=rep(6, 4), 
+                           alpha = .1 , fill = c("blue", "red", "grey","green")) +
+  ggplot2::annotate("text",
+                           x = c(3, 9, 15,21),
+                           y = rep(6, 4),
+                           label = c("Facilitator","Maker", "Visionary", "Manager"),
+                           family = "Palatino", fontface = 3, size=4) +
+  scale_y_continuous(breaks=c(1,2,3,4,5), labels=c("(Novate) 1", "2","(Competent) 3", "4", "(Expert) 5")) +
+   theme(
+     plot.background = element_rect(fill = "#f9fbfc"),
+     axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)
+     #panel.grid.major = element_blank(),
+     #panel.grid.minor = element_blank(),
+     #axis.text.y = element_blank(),
+     #axis.text =  element_text(color = "black"),
+     #plot.title = element_markdown(face = "bold", hjust = 0.5, size = rel(1.8), margin = margin(t=10, b = 15)),
+     #plot.subtitle = element_markdown(size = rel(0.9)),
+     #plot.caption = element_markdown(family = "Source Sans Pro",size = rel(.8), margin = margin(t = 10)),
+     #strip.text = element_text( face = "bold", size = rel(1.1)),
+     #plot.margin = margin(t= 15, r = 10,b = 20, l = 10)
+   ) +
+  labs(x = "", y = "")
+  
+  
+ 
 ```
 
 ## Retrospective results: A cross-case analysis
@@ -382,3 +439,76 @@ This work is part of the Climate Labs Project co-financed by the European Commis
 \newpage
 
 # Bibliography
+
+# Annex
+```{r, include=FALSE, eval=FALSE}
+# ------- figure- ---
+fig3 <- readxl::read_excel("data/Data-competences-onlyradar.xlsx")
+names(fig3)
+labs <- fig3 %>% pull(Profile) 
+
+
+
+Climatelabs <- 
+  fig3 %>% filter(Profile %in% labs[5:14]) %>% 
+  mutate(Country = c(rep("Colombia",5), rep("Brazil",3), rep("Mexico",2))) %>% 
+  select(Country, Profile, Medi.1:Eval.1) %>% 
+  pivot_longer(cols = Medi.1:Eval.1 )
+  
+
+Climatelabs_bg <- fig3 %>% filter(Profile %in% labs[5:14]) %>% 
+  mutate(Country = c(rep("Colombia",5), rep("Brazil",3), rep("Mexico",2))) %>% 
+  select(Country, Profile, Medi.1:Eval.1) %>% 
+  pivot_longer(cols = Medi.1:Eval.1 ) %>% 
+  mutate(Perfil = Profile) %>% 
+  select(everything(), -Profile)
+
+# Orden of the factors
+Orden <- Climatelabs %>% pull(name) 
+Orden <- Orden[1:23]
+Orden <- factor(Orden, Orden)
+
+
+Climatelabs$name <- factor(Climatelabs$name, Orden)
+str(Climatelabs)
+
+
+Climatelabs %>% filter(Profile %in% labs[12:14]) %>% 
+  ggplot() + 
+  #geom_line(data = Climatelabs_bg,  aes(x = name, y = value , group = Perfil), color = "grey75",size = .7) +
+  #geom_line( aes(x = name, y = value , group = Profile), color = "#0b53c1",size = .7) +
+  #geom_point(aes(x = name, y = value), shape = 21, fill = "white", color = "#0b53c1", stroke = 1.3,  size = 2.8) +
+  geom_line( aes(x = name, y = value , color = Profile, group = Profile), size = .7) +
+  geom_point(aes(x = name, y = value, color = Profile, group = Profile), shape = 21, fill = "white", stroke = 1.3,  size = 2.8) +
+  #facet_grid( rows = vars(Country) , scales ="free_y")  +
+  #coord_flip() + 
+  #coord_cartesian(clip = "off") + 
+  #facet_wrap(vars(Country) ~ vars(Profile)) + 
+  #facet_grid( cols = vars(Profile) , scales ="free_y")  +
+  theme_minimal() +
+  ggplot2::annotate("rect", xmin=c(1,8,13,19), xmax=c(7,12,19,23), 
+                           ymin=rep(1,4), ymax=rep(6, 4), 
+                           alpha = .1 , fill = c("blue", "red", "grey","green")) +
+  ggplot2::annotate("text",
+                           x = c(3, 9, 15,21),
+                           y = rep(6, 4),
+                           label = c("Facilitator","Maker", "Visionary", "Manager"),
+                           family = "Palatino", fontface = 3, size=4) +
+  scale_y_continuous(breaks=c(1,2,3,4,5), labels=c("(Novate) 1", "2","(Competent) 3", "4", "(Expert) 5")) +
+   theme(
+     plot.background = element_rect(fill = "#f9fbfc"),
+     axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)
+     #panel.grid.major = element_blank(),
+     #panel.grid.minor = element_blank(),
+     #axis.text.y = element_blank(),
+     #axis.text =  element_text(color = "black"),
+     #plot.title = element_markdown(face = "bold", hjust = 0.5, size = rel(1.8), margin = margin(t=10, b = 15)),
+     #plot.subtitle = element_markdown(size = rel(0.9)),
+     #plot.caption = element_markdown(family = "Source Sans Pro",size = rel(.8), margin = margin(t = 10)),
+     #strip.text = element_text( face = "bold", size = rel(1.1)),
+     #plot.margin = margin(t= 15, r = 10,b = 20, l = 10)
+   ) +
+  labs(x = "", y = "")
+```
+
+
