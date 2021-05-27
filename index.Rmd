@@ -13,8 +13,8 @@ author:
   num: ERPI
 classoption: APA,STIX2COL
 output:
-  html_document:
-    df_print: paged
+  # html_document:
+  #   df_print: paged
   pdf_document:
     template: template-Wiley.tex
     keep_tex: yes
@@ -41,7 +41,13 @@ address:
     Colombia, Bogotá, Colombia
 link-citations: yes
 linkcolor: blue
-header-includes: \usepackage{xcolor}
+header-includes:  
+- \usepackage{xcolor}
+- \usepackage{pdflscape}
+- \newcommand{\blandscape}{\begin{landscape}}
+- \newcommand{\elandscape}{\end{landscape}}
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r, include=FALSE, echo=FALSE}
@@ -114,9 +120,29 @@ One of the earliest innovation role models is the one proposed by [@Roberts1982]
 
 More recently, @Hering2005 present eight innovation roles, placing emphasis on the ones required for a generic innovation process. The authors detailed the features of what can be expected of these roles, rather than just titles or job descriptions. According to them, *connector*, *librarian*, *framer*, *judge*, *prototyper*, *monitor* and *storyteller* are the roles that should be sought when putting together an innovation team. The organization's commitment and a belief system are also deemed critical to creating the time and the resources necessary for innovation teams to deal with the uncertainty pertaining to any innovation process. Alternatively, @Kelley2005 published *Ten Faces of Innovation* based on their experiences at IDEO. The book presents ten descriptions of condensed persona meant to inspire which roles members of an organization should play to foster creativity and innovation. They consider that each role or persona helps bring specific values, tools, skills to the table, and therefore that it is important to ensure they are present in any innovation team. These ten roles are grouped by *learners* (anthropologist, experimenter and cross-pollinator), *organizers* (hurdler, collaborator and director) and *builders* (experience architect, set designer, caregiver and storyteller).
 
-```{r Table2, fig.cap=" Table 2 - Role models of innovation teams over the years"}
+\newpage
+\blandscape
+```{r Table2, fig.cap="Table 2 - Role models of innovation teams over the years"}
+
+T2 <- read_csv("Tables/Table_2.csv")
+#T2 <- tibble(T2)
+#set_flextable_defaults(fonts_ignore=TRUE)
+
+T2 %>% flextable() %>% 
+   delete_part(part = "header") %>% 
+  add_header_row( values = c("References","Innovation team roles studied over the years"), colwidths = c(1,10)) %>% 
+  hline_top(part="all") %>% 
+  #set_caption("SI Lab list of competences retrieved from Wascher et al., (2018)") %>%
+  fontsize(size = 8) %>% 
+  bold(i = 1, j = 1:11, bold = TRUE, part = "header") %>% 
+  bold(i = seq(1,by=2, len=8), j = 2:11, bold = TRUE, part = "body") %>%
+  hline( i = seq(1,by=2, len=8), j = 2:11, border = NULL, part = "body") %>% 
+  hline( i = seq(2,by=2, len=7), j = 1:11, border = NULL, part = "body") %>% 
+  vline(i = 1:16, j = 1:1, part = "body")
 
 ```
+\elandscape
+\newpage
 
 Based on 104 interviews with representatives of German companies and 42 cases from questionnaires, @Gemunden2007 propose a model to determine whether certain innovation roles are influential in adding to the success of new product development in the context of increasingly open innovation. They point out that not only innovation and technological experts are required (*expert promoter* and *process promoter*), but strong leadership (*project leader*) as well as good external relationships (*technology and market relationships promoters*). Moreover, they emphasize the importance of institutional support in the form of power promoters. Recently, [@Goduscheit2014] endeavored to build on the work initiated by [@Gemunden2007]. There, he seeks to further develop the concept of innovation promoters. This notion is based on the idea that innovation teams are meant to overcome the barriers and difficulties to successful innovations. His aim is to explore the interorganizational dimension between the innovation roles proposed by [@Gemunden2007] by analyzing how they interact/perform with/within multiple organizations. As a result, he further develops the innovation promoter model by moving from the original six roles to a proposition with nine roles: *seniority*, *top-level representative*, *technological expert*, *methodology expert*, *intra-organizational process*, *inter-organizational process*, *project process*, *technology relationship* and *market relationship*.
 

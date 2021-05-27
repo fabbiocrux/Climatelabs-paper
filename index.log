@@ -1,17 +1,17 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.25)  25 MAY 2021 17:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  27 MAY 2021 09:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **index.tex
 (./index.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-05-11> (./WileyNJD-v2.cls
+L3 programming layer <2021-02-18> (./WileyNJD-v2.cls
 Document Class: WileyNJD-v2 2017/06/23 v0.2 Standard LaTeX document class for J
 ournal
 \job@temptoken=\toks15
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fleqn.clo
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/fleqn.clo
 File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
 \mathindent=\skip47
 Applying: [2015/01/01] Make \[ robust on input line 50.
@@ -20,7 +20,7 @@ Already applied: [0000/00/00] Make \[ robust on input line 62.
 Applying: [2015/01/01] Make \] robust on input line 74.
 LaTeX Info: Redefining \] on input line 75.
 Already applied: [0000/00/00] Make \] robust on input line 83.
-) (c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size10.clo
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
 \c@part=\count179
@@ -34,36 +34,25 @@ File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen138
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.
-sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.st
-y
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.
-sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graph
-ics.cfg
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/pdfte
-x.def
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen139
 \Gin@req@width=\dimen140
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/multicol.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \c@tracingmulticols=\count187
 \mult@box=\box47
@@ -132,16 +121,13 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \mult@nat@firstbox=\box91
 \colbreak@box=\box92
 \mc@col@check@num=\count196
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.
-sty
-Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/01/29 v2.7 Span multiple rows of a table
 \multirow@colwidth=\skip52
 \multirow@cntb=\count197
 \multirow@dima=\skip53
 \bigstrutjot=\dimen150
-) (c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/sttools/cuted.st
-y
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/sttools/cuted.sty
 Package: cuted 2012/10/04 v1.5 Mixing onecolumn and twocolumn modes
 \At@ViperColsBreak=\toks17
 \v@aaa=\box93
@@ -155,21 +141,18 @@ Package: cuted 2012/10/04 v1.5 Mixing onecolumn and twocolumn modes
 \viper@penalty=\count198
 \hold@viper=\box97
 \ht@viper=\dimen151
-) (c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifpdf.st
-y
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
-)) (c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/changepage/changep
-age.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count199
 \cp@tempcnt=\count266
-) (c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count267
 \calc@Bcount=\count268
@@ -181,12 +164,9 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count269
 \calc@Cskip=\skip60
-) (c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.st
-y
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color
-.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -199,23 +179,19 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-) (c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count270
 \float@exts=\toks18
 \float@box=\box98
 \@float@everytoks=\toks19
 \@floatcapt=\box99
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/sttools/floatpag.s
-ty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/sttools/floatpag.sty
 Package: floatpag 2012/05/29 v1.1 Different pagestyles on float pages
 Package: floatpag 1999/04/29 FLOAT PAGESTYLE
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/dblfloatfix/dblflo
-atfix.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/dblfloatfix/dblfloatfix.sty
 Package: dblfloatfix 2012/12/31 v1.0a (JAW)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fixltx2e.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/fixltx2e.sty
 Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
 Applying: [2015/01/01] Old fixltx2e package on input line 46.
 
@@ -227,11 +203,9 @@ Already applied: [0000/00/00] Old fixltx2e package on input line 53.
 )
 \@dblbotnum=\count271
 \c@dblbotnumber=\count272
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/rotating.
-sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count273
@@ -239,9 +213,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \rotFPbot=\skip62
 \rot@float@box=\box100
 \rot@mess@toks=\toks20
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.st
-y
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTleft=\skip63
 \LTright=\skip64
@@ -258,7 +230,7 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \c@LT@tables=\count277
 \c@LT@chunks=\count278
 \LT@p@ftn=\toks21
-) (c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box105
 \UL@hyphenbox=\box106
 \UL@skip=\skip67
@@ -269,12 +241,10 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \ULC@box=\box107
 Package: ulem 2019/11/18
 \ULdepth=\dimen157
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/enumerate.st
-y
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks23
-) (c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/soul/soul.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks24
 \SOUL@lasttoken=\toks25
@@ -285,13 +255,9 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@ttwidth=\dimen158
 \SOUL@uldp=\dimen159
 \SOUL@ulht=\dimen160
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption.st
-y
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption3.s
-ty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \captionmargin=\dimen161
 \captionmargin@=\dimen162
@@ -309,89 +275,57 @@ Package caption Info: changepage package is loaded.
 \caption@adjustwidth@linewidth=\dimen169
 Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/ltcaption.
-sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.
-sty
-Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.
-sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-02-10 v7.00j Hypertext links for LaTeX
+(/usr/local/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdfte
-xcmds.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwar
-err.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetk
-eys.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvd
-efinekeys.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfesc
-ape.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.st
-y
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltx
-macro.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.st
-y
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoption
-s.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen170
 \Hy@linkcounter=\count282
 \Hy@pagecounter=\count283
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.de
-f
-File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-02-10 v7.00j Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref-
-langpatches.def
-File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
+(/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-02-10 v7.00j Hyperref: patches for babel la
 nguages
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.
-sty
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmd
-s.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count284
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-02-10 v7.00j Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
@@ -405,13 +339,9 @@ Package hyperref Info: Bookmarks ON on input line 4445.
 \c@Hy@tempcnt=\count285
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen171
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.st
-y
+(/usr/local/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigin
-tcalc.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
@@ -427,9 +357,7 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6100.
 Package hyperref Info: PDF/A mode OFF on input line 6105.
 LaTeX Info: Redefining \ref on input line 6145.
 LaTeX Info: Redefining \pageref on input line 6149.
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.
-sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
 ge
 with kernel methods
@@ -439,13 +367,9 @@ with kernel methods
 \c@Hfootnote=\count289
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.d
-ef
-File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx
-.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-02-10 v7.00j Hyperref driver for pdfTeX
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
@@ -453,12 +377,10 @@ with kernel methods
 \Fld@listcount=\count290
 \c@bookmark@seq@number=\count291
 
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rer
-unfilecheck.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/un
-iquecounter.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -467,42 +389,18 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip69
 )
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 271.
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.
-sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bookmark/bkm-pdfte
-x.def
+(/usr/local/texlive/2020/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 \BKM@id=\count292
-)) (c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/subfig/subfig.s
-ty
-Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count293
-\sf@farskip=\skip70
-\sf@captopadj=\dimen174
-\sf@capskip=\skip71
-\sf@nearskip=\skip72
-\c@subfigure=\count294
-\c@subfigure@save=\count295
-\c@lofdepth=\count296
-\c@subtable=\count297
-\c@subtable@save=\count298
-\c@lotdepth=\count299
-\sf@top=\skip73
-\sf@bottom=\skip74
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/oberdiek/twoopt.st
-y
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/oberdiek/twoopt.sty
 Package: twoopt 2016/05/16 v1.6 Definitions with two optional arguments (HO)
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/footmisc/footmisc.
-sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks29
-\footnotemargin=\dimen175
-\c@pp@next@reset=\count300
+\footnotemargin=\dimen174
+\c@pp@next@reset=\count293
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -511,52 +409,48 @@ Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
 Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/array.sty
 Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
-\col@sep=\dimen176
+\col@sep=\dimen175
 \ar@mcellbox=\box108
-\extrarowheight=\dimen177
+\extrarowheight=\dimen176
 \NC@list=\toks30
-\extratabsurround=\skip75
-\backup@length=\skip76
+\extratabsurround=\skip70
+\backup@length=\skip71
 \ar@cellbox=\box109
 )
-\TX@col@width=\dimen178
-\TX@old@table=\dimen179
-\TX@old@col=\dimen180
-\TX@target=\dimen181
-\TX@delta=\dimen182
-\TX@cols=\count301
+\TX@col@width=\dimen177
+\TX@old@table=\dimen178
+\TX@old@col=\dimen179
+\TX@target=\dimen180
+\TX@delta=\dimen181
+\TX@cols=\count294
 \TX@ftn=\toks31
 )
-\tfboxrule=\dimen183
-\bfboxrule=\dimen184
-\BXRuleThickness=\dimen185
-\BXleftrightskipdimen=\dimen186
-\BXhsize=\dimen187
-\FreePageSpace=\dimen188
-\ovsize=\dimen189
-\adjustskip=\skip77
+\tfboxrule=\dimen182
+\bfboxrule=\dimen183
+\BXRuleThickness=\dimen184
+\BXleftrightskipdimen=\dimen185
+\BXhsize=\dimen186
+\FreePageSpace=\dimen187
+\ovsize=\dimen188
+\adjustskip=\skip72
 \BXbox=\box110
-\xxptspaceamount=\skip78
-\BXboxoutbnewskip=\skip79
-\BXdim=\dimen190
+\xxptspaceamount=\skip73
+\BXboxoutbnewskip=\skip74
+\BXdim=\dimen189
 \BXgraybox=\box111
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.
-sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box112
-\sift@deathcycles=\count302
-\@vwid@loff=\dimen191
-\@vwid@roff=\dimen192
-) (c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/dcolumn.st
-y
+\sift@deathcycles=\count295
+\@vwid@loff=\dimen190
+\@vwid@roff=\dimen191
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
-) (c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/stix/stix.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/stix/stix.sty
 Package: stix 2018/04/17 v1.1.3-latex STIX fonts support package
 Now handling font encoding LS1 ...
 ... no UTF-8 mapping file for font encoding LS1
@@ -653,68 +547,61 @@ LaTeX Info: Redefining \vdots on input line 1518.
 LaTeX Info: Redefining \cdots on input line 1522.
 LaTeX Font Info:    Redeclaring math symbol \mathsterling on input line 1978.
 LaTeX Info: Redefining \not on input line 2144.
-) (c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+stix on input line 1
 12.
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/stix/t1stix.fd
+(/usr/local/texlive/2020/texmf-dist/tex/latex/stix/t1stix.fd
 File: t1stix.fd 2015/04/17 v1.1.2-latex STIX T1 font definitions
 ))
-\trimwidth=\skip80
-\trimheight=\skip81
-\typewidth=\skip82
-\typeheight=\skip83
-\normaltextheight=\skip84
-\blindfoliodrop=\skip85
-\figheight=\skip86
-\figwidth=\skip87
-\tabledim=\skip88
-\columnhsizevalue=\dimen193
-\abs@coli@hsize=\skip89
-\abs@colii@hsize=\skip90
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.
-sty
+\trimwidth=\skip75
+\trimheight=\skip76
+\typewidth=\skip77
+\typeheight=\skip78
+\normaltextheight=\skip79
+\blindfoliodrop=\skip80
+\figheight=\skip81
+\figwidth=\skip82
+\tabledim=\skip83
+\columnhsizevalue=\dimen192
+\abs@coli@hsize=\skip84
+\abs@colii@hsize=\skip85
+(/usr/local/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count303
-\Gm@cntv=\count304
-\c@Gm@tempcnt=\count305
-\Gm@bindingoffset=\dimen194
-\Gm@wd@mp=\dimen195
-\Gm@odd@mp=\dimen196
-\Gm@even@mp=\dimen197
-\Gm@layoutwidth=\dimen198
-\Gm@layoutheight=\dimen199
-\Gm@layouthoffset=\dimen256
-\Gm@layoutvoffset=\dimen257
+\Gm@cnth=\count296
+\Gm@cntv=\count297
+\c@Gm@tempcnt=\count298
+\Gm@bindingoffset=\dimen193
+\Gm@wd@mp=\dimen194
+\Gm@odd@mp=\dimen195
+\Gm@even@mp=\dimen196
+\Gm@layoutwidth=\dimen197
+\Gm@layoutheight=\dimen198
+\Gm@layouthoffset=\dimen199
+\Gm@layoutvoffset=\dimen256
 \Gm@dimlist=\toks32
 )
-\parindentvalue=\dimen258
-\pageheight=\dimen259
-\rulecount=\count306
-\leftcolrulepos=\dimen260
-\rightcolrulepos=\dimen261
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/eso-pic/showframe.
-sty
+\parindentvalue=\dimen257
+\pageheight=\dimen258
+\rulecount=\count299
+\leftcolrulepos=\dimen259
+\rightcolrulepos=\dimen260
+(/usr/local/texlive/2020/texmf-dist/tex/latex/eso-pic/showframe.sty
 Package: showframe 2020/10/14 v0.1j showframe (new impl., RN)
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/eso-pic/eso-pic.st
-y
+(/usr/local/texlive/2020/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen262
-\ESO@tempdimb=\dimen263
+\ESO@tempdima=\dimen261
+\ESO@tempdimb=\dimen262
 )
-\SF@tempdima=\dimen264
+\SF@tempdima=\dimen263
 )
-\artopleftskipdim=\dimen265
+\artopleftskipdim=\dimen264
 \@xmlpage=\write3
-\c@spagecounter=\count307
-\c@lpagecounter=\count308
+\c@spagecounter=\count300
+\c@lpagecounter=\count301
 LaTeX Info: Redefining \rm on input line 1294.
 LaTeX Info: Redefining \sf on input line 1295.
 LaTeX Info: Redefining \tt on input line 1296.
@@ -724,243 +611,540 @@ LaTeX Info: Redefining \sl on input line 1299.
 LaTeX Info: Redefining \sc on input line 1300.
 LaTeX Info: Redefining \cal on input line 1301.
 LaTeX Info: Redefining \mit on input line 1302.
-\aucount=\count309
-\corrauthcount=\count310
-\authfncnt=\count311
-\authfnTmpCnt=\count312
+\aucount=\count302
+\corrauthcount=\count303
+\authfncnt=\count304
+\authfnTmpCnt=\count305
 \aufootnotemark=\box113
 \authmarkbox=\box114
-\c@affn=\count313
-\addcount=\count314
-\emailcount=\count315
-\punctcount=\count316
-\foot@titlepage@raise@skip=\skip91
-\lastauthorcnt=\count317
-\fundinginfocount=\count318
-\commafundinginfocount=\count319
-\fundinginfotempcount=\count320
-\tempfundinginfocount=\count321
-\JELinfocount=\count322
-\commaJELinfocount=\count323
-\JELinfotempcount=\count324
-\tempJELinfocount=\count325
+\c@affn=\count306
+\addcount=\count307
+\emailcount=\count308
+\punctcount=\count309
+\foot@titlepage@raise@skip=\skip86
+\lastauthorcnt=\count310
+\fundinginfocount=\count311
+\commafundinginfocount=\count312
+\fundinginfotempcount=\count313
+\tempfundinginfocount=\count314
+\JELinfocount=\count315
+\commaJELinfocount=\count316
+\JELinfotempcount=\count317
+\tempJELinfocount=\count318
 \htftbox=\box115
-\ovsize=\dimen266
-\oovsize=\dimen267
-\FreePageSpace=\dimen268
-\FreePageSpaceTest=\dimen269
-\fadjskip=\skip92
-\adjustskip=\skip93
-\titleskip=\skip94
+\ovsize=\dimen265
+\oovsize=\dimen266
+\FreePageSpace=\dimen267
+\FreePageSpaceTest=\dimen268
+\fadjskip=\skip87
+\adjustskip=\skip88
+\titleskip=\skip89
 \abs@boxa=\box116
 \abs@boxb=\box117
 \abs@boxc=\box118
-\abs@dima=\dimen270
-\abs@dimb=\dimen271
-\abs@dimc=\dimen272
-\adjtitleskip=\skip95
-\c@chapter=\count326
-\secruleskip=\skip96
-\rhverticalsep=\skip97
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty
+\abs@dima=\dimen269
+\abs@dimb=\dimen270
+\abs@dimc=\dimen271
+\adjtitleskip=\skip90
+\c@chapter=\count319
+\secruleskip=\skip91
+\rhverticalsep=\skip92
+(/usr/local/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip98
-\bibsep=\skip99
+\bibhang=\skip93
+\bibsep=\skip94
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count327
+\c@NAT@ctr=\count320
 )
-\c@scheme=\count328
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.
-sty
+\c@scheme=\count321
+(/usr/local/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen273
-\lightrulewidth=\dimen274
-\cmidrulewidth=\dimen275
-\belowrulesep=\dimen276
-\belowbottomsep=\dimen277
-\aboverulesep=\dimen278
-\abovetopsep=\dimen279
-\cmidrulesep=\dimen280
-\cmidrulekern=\dimen281
-\defaultaddspace=\dimen282
-\@cmidla=\count329
-\@cmidlb=\count330
-\@aboverulesep=\dimen283
-\@belowrulesep=\dimen284
-\@thisruleclass=\count331
-\@lastruleclass=\count332
-\@thisrulewidth=\dimen285
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.st
-y
+\heavyrulewidth=\dimen272
+\lightrulewidth=\dimen273
+\cmidrulewidth=\dimen274
+\belowrulesep=\dimen275
+\belowbottomsep=\dimen276
+\aboverulesep=\dimen277
+\abovetopsep=\dimen278
+\cmidrulesep=\dimen279
+\cmidrulekern=\dimen280
+\defaultaddspace=\dimen281
+\@cmidla=\count322
+\@cmidlb=\count323
+\@aboverulesep=\dimen282
+\@belowrulesep=\dimen283
+\@thisruleclass=\count324
+\@lastruleclass=\count325
+\@thisrulewidth=\dimen284
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
-\@mathmargin=\skip100
+\@mathmargin=\skip95
 For additional information on amsmath, use the `?' option.
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.st
-y
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks33
-\ex@=\dimen286
-))
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+\ex@=\dimen285
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen287
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+\pmbraise@=\dimen286
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count333
+\inf@bad=\count326
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count334
-\leftroot@=\count335
+\uproot@=\count327
+\leftroot@=\count328
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count336
-\DOTSCASE@=\count337
+\classnum@=\count329
+\DOTSCASE@=\count330
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 \Mathstrutbox@=\box119
 \strutbox@=\box120
-\big@size=\dimen288
+\big@size=\dimen287
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count338
-\c@MaxMatrixCols=\count339
+\macc@depth=\count331
+\c@MaxMatrixCols=\count332
 \dotsspace@=\muskip17
-\c@parentequation=\count340
-\dspbrk@lvl=\count341
+\c@parentequation=\count333
+\dspbrk@lvl=\count334
 \tag@help=\toks34
-\row@=\count342
-\column@=\count343
-\maxfields@=\count344
+\row@=\count335
+\column@=\count336
+\maxfields@=\count337
 \andhelp@=\toks35
-\eqnshift@=\dimen289
-\alignsep@=\dimen290
-\tagshift@=\dimen291
-\tagwidth@=\dimen292
-\totwidth@=\dimen293
-\lineht@=\dimen294
+\eqnshift@=\dimen288
+\alignsep@=\dimen289
+\tagshift@=\dimen290
+\tagwidth@=\dimen291
+\totwidth@=\dimen292
+\lineht@=\dimen293
 \@envbody=\toks36
-\multlinegap=\skip101
-\multlinetaggap=\skip102
+\multlinegap=\skip96
+\multlinetaggap=\skip97
 \mathdisplay@stack=\toks37
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
-) (c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amscls/amsthm.st
-y
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks38
 \thm@bodyfont=\toks39
 \thm@headfont=\toks40
 \thm@notefont=\toks41
 \thm@headpunct=\toks42
-\thm@preskip=\skip103
-\thm@postskip=\skip104
-\thm@headsep=\skip105
+\thm@preskip=\skip98
+\thm@postskip=\skip99
+\thm@headsep=\skip100
 \dth@everypar=\toks43
 )
-\c@theorem=\count345
-\c@construction=\count346
-\c@estimate=\count347
-\c@lemma=\count348
-\c@corollary=\count349
-\c@result=\count350
-\c@algth=\count351
-\c@proposition=\count352
-\c@hypothesis=\count353
-\c@experiment=\count354
-\c@LWrule=\count355
-\c@procedure=\count356
-\c@assertion=\count357
-\c@axiom=\count358
-\c@conjecture=\count359
-\c@criterion=\count360
-\c@reduction=\count361
-\c@sublemma=\count362
-\c@case=\count363
-\c@remark=\count364
-\c@notation=\count365
-\c@answer=\count366
-\c@base=\count367
-\c@claim=\count368
-\c@ccomment=\count369
-\c@subproof=\count370
-\c@conclusion=\count371
-\c@observation=\count372
-\c@subcase=\count373
-\c@step=\count374
-\c@summary=\count375
-\c@definition=\count376
-\c@condition=\count377
-\c@property=\count378
-\c@problem=\count379
-\c@fact=\count380
-\c@assumption=\count381
-\c@eexample=\count382
-\c@model=\count383
-\c@affirmation=\count384
-\c@application=\count385
-\c@convention=\count386
-\c@discussion=\count387
-\c@exercise=\count388
-\c@question=\count389
-\c@scholium=\count390
-\c@terminology=\count391
-\c@printcitcnt=\count392
-\c@@pps=\count393
-\c@@ppsavesec=\count394
-\c@@ppsaveapp=\count395
-
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/algorithms/algorit
-hm.sty
+\c@theorem=\count338
+\c@construction=\count339
+\c@estimate=\count340
+\c@lemma=\count341
+\c@corollary=\count342
+\c@result=\count343
+\c@algth=\count344
+\c@proposition=\count345
+\c@hypothesis=\count346
+\c@experiment=\count347
+\c@LWrule=\count348
+\c@procedure=\count349
+\c@assertion=\count350
+\c@axiom=\count351
+\c@conjecture=\count352
+\c@criterion=\count353
+\c@reduction=\count354
+\c@sublemma=\count355
+\c@case=\count356
+\c@remark=\count357
+\c@notation=\count358
+\c@answer=\count359
+\c@base=\count360
+\c@claim=\count361
+\c@ccomment=\count362
+\c@subproof=\count363
+\c@conclusion=\count364
+\c@observation=\count365
+\c@subcase=\count366
+\c@step=\count367
+\c@summary=\count368
+\c@definition=\count369
+\c@condition=\count370
+\c@property=\count371
+\c@problem=\count372
+\c@fact=\count373
+\c@assumption=\count374
+\c@eexample=\count375
+\c@model=\count376
+\c@affirmation=\count377
+\c@application=\count378
+\c@convention=\count379
+\c@discussion=\count380
+\c@exercise=\count381
+\c@question=\count382
+\c@scholium=\count383
+\c@terminology=\count384
+\c@printcitcnt=\count385
+\c@@pps=\count386
+\c@@ppsavesec=\count387
+\c@@ppsaveapp=\count388
+(/usr/local/texlive/2020/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 \@float@every@algorithm=\toks44
-\c@algorithm=\count396
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/algorithmicx/algor
-ithmicx.sty
+\c@algorithm=\count389
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count397
-\c@ALG@rem=\count398
-\c@ALG@nested=\count399
-\ALG@tlm=\skip106
-\ALG@thistlm=\skip107
-\c@ALG@Lnr=\count400
-\c@ALG@blocknr=\count401
-\c@ALG@storecount=\count402
-\c@ALG@tmpcounter=\count403
-\ALG@tmplength=\skip108
-)
-(c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/algorithmicx/algps
-eudocode.sty
+\c@ALG@line=\count390
+\c@ALG@rem=\count391
+\c@ALG@nested=\count392
+\ALG@tlm=\skip101
+\ALG@thistlm=\skip102
+\c@ALG@Lnr=\count393
+\c@ALG@blocknr=\count394
+\c@ALG@storecount=\count395
+\c@ALG@tmpcounter=\count396
+\ALG@tmplength=\skip103
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
 Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count397
+\lst@gtempboxa=\box121
+\lst@token=\toks45
+\lst@length=\count398
+\lst@currlwidth=\dimen294
+\lst@column=\count399
+\lst@pos=\count400
+\lst@lostspace=\dimen295
+\lst@width=\dimen296
+\lst@newlines=\count401
+\lst@lineno=\count402
+\lst@maxwidth=\dimen297
+(/usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count403
+\lst@skipnumbers=\count404
+\lst@framebox=\box122
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+\jnlcitationbox=\box123
+\jnlcithsize=\dimen298
+(/usr/local/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen299
+\WF@size=\dimen300
+\c@WF@wrappedlines=\count405
+\WF@box=\box124
+\WF@everypar=\toks46
+Package: wrapfig 2003/01/31  v 3.6
+)
+\wraplines=\count406
+\@authorfigbox=\box125
+\@authorfigboxdim=\skip104
+\biofigadjskip=\skip105
+)
+\csllabelwidth=\skip106
+\cslhangindent=\skip107
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks47
+\minrowclearance=\skip108
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/hhline.sty
+Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 60.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count407
+\output=\toks48
+\linenoprevgraf=\count408
+\linenumbersep=\dimen301
+\linenumberwidth=\dimen302
+\c@linenumber=\count409
+\c@pagewiselinenumber=\count410
+\c@LN@truepage=\count411
+\c@internallinenumber=\count412
+\c@internallinenumbers=\count413
+\quotelinenumbersep=\dimen303
+\bframerule=\dimen304
+\bframesep=\dimen305
+\bframebox=\box126
+LaTeX Info: Redefining \\ on input line 3056.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count414
+\l__pdf_internal_box=\box127
 )
 
-! LaTeX Error: File `listings.sty' not found.
+LaTeX Warning: Unused global option(s):
+    [AMA,STIX1COL,APA,STIX2COL].
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
+(./index.aux)
+\openout1 = `index.aux'.
 
-Enter file name: 
-! Emergency stop.
-<read *> 
-         
-l.3334 \usepackage
-                  {alltt}%^^M 
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 65.
+LaTeX Font Info:    Trying to load font information for LS1+stix on input line 
+65.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls1stix.fd
+File: ls1stix.fd 2015/04/17 v1.1.2-latex STIX LS1 font definitions
+)
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 65.
+LaTeX Font Info:    Trying to load font information for LS2+stix on input line 
+65.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls2stix.fd
+File: ls2stix.fd 2015/04/17 v1.1.2-latex STIX LS2 font definitions
+)
+LaTeX Font Info:    ... okay on input line 65.
+(/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count415
+\scratchdimen=\dimen306
+\scratchbox=\box128
+\nofMPsegments=\count416
+\nofMParguments=\count417
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count418
+\MPscratchDim=\dimen307
+\MPnumerator=\count419
+\makeMPintoPDFobject=\count420
+\everyMPtoPDFconversion=\toks50
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 65.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+(/usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count421
+)
+LaTeX Info: Redefining \ref on input line 65.
+LaTeX Info: Redefining \pageref on input line 65.
+LaTeX Info: Redefining \nameref on input line 65.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* hratio: 1:1
+* vratio: 1:1
+* modes: twoside 
+* h-part:(L,W,R)=(45.0pt, 507.50787pt, 45.0pt)
+* v-part:(T,H,B)=(57.5pt, 668.79605pt, 59.0pt)
+* \paperwidth=597.50787pt
+* \paperheight=785.29605pt
+* \textwidth=507.50787pt
+* \textheight=668.79605pt
+* \oddsidemargin=-27.26999pt
+* \evensidemargin=-27.26999pt
+* \topmargin=-46.76999pt
+* \headheight=21.0pt
+* \headsep=11.0pt
+* \topskip=6.0pt
+* \footskip=48.5pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=0.0pt
+* \skip\footins=18.0pt plus 2.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@lstlisting=\count422
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
+11.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Trying to load font information for LS1+stixscr on input li
+ne 111.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls1stixscr.fd
+File: ls1stixscr.fd 2015/04/17 v1.1.2-latex STIX script LS1 font definitions
+)
+LaTeX Font Info:    Trying to load font information for LS2+stixex on input lin
+e 111.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls2stixex.fd
+File: ls2stixex.fd 2015/04/17 v1.1.2-latex STIX extentions LS2 font definitions
+
+)
+LaTeX Font Info:    Trying to load font information for LS1+stixfrak on input l
+ine 111.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls1stixfrak.fd
+File: ls1stixfrak.fd 2015/04/17 v1.1.2-latex STIX fraktur LS1 font definitions
+)
+LaTeX Font Info:    Trying to load font information for LS1+stixbb on input lin
+e 111.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls1stixbb.fd
+File: ls1stixbb.fd 2015/04/17 v1.1.2-latex STIX blackboard LS1 font definitions
+
+)
+LaTeX Font Info:    Trying to load font information for LS2+stixcal on input li
+ne 111.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls2stixcal.fd
+File: ls2stixcal.fd 2015/04/17 v1.1.2-latex STIX calligraphic LS2 font definiti
+ons
+)
+LaTeX Font Info:    Trying to load font information for LS1+stixsf on input lin
+e 111.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls1stixsf.fd
+File: ls1stixsf.fd 2015/04/17 v1.1.2-latex STIX sans-serif LS1 font definitions
+
+)
+LaTeX Font Info:    Trying to load font information for LS2+stixtt on input lin
+e 111.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls2stixtt.fd
+File: ls2stixtt.fd 2015/04/17 v1.1.2-latex STIX typewriter LS2 font definitions
+
+)
+Overfull \hbox (346.99213pt too wide) in paragraph at lines 111--111
+[][] | || []|[][] 
+ []
+
+LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 11
+1.
+
+Overfull \vbox (6.46347pt too high) has occurred while \output is active []
+
+[1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+\openout3 = `index.pag'.
+
+] [2] [3] [4] [5] [6]
+Overfull \hbox (161.28818pt too wide) has occurred while \output is active
+[]
+ []
+
+[7
+
+]
+Overfull \hbox (161.28818pt too wide) has occurred while \output is active
+[]
+ []
+
+[8] [9
+
+] [10]
+LaTeX Font Info:    Trying to load font information for TS1+stix on input line 
+1088.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ts1stix.fd
+File: ts1stix.fd 2015/04/17 v1.1.2-latex STIX TS1 font definitions
+) [11] [12] [13] [14] [15] [16]
+Underfull \hbox (badness 4792) in paragraph at lines 1694--1698
+[][]\T1/stix/m/n/10.03749 Allen, J. P., and R. K. W. Van Der Velden. 2005. ``Th
+e Role of Self-Assessment in Mea-sur-ing Skills,'' Jan-
+ []
+
+
+Underfull \hbox (badness 7186) in paragraph at lines 1694--1698
+\T1/stix/m/n/10.03749 uary, 1--25. [][]$https : / / api . semanticscholar . org
+ / CorpusID : 153922219 % 20https : / / cris . maastrichtuniversity . nl / en /
+ publications /
+ []
+
+[17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 1963--1968
+[][]\T1/stix/m/n/10.03749 Puttick, Ruth, Peter Baeck, and Philip Col-li-gan. 20
+14. \T1/stix/m/it/10.03749 I-Teams: The Teams and Funds Mak-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1963--1968
+\T1/stix/m/it/10.03749 ing Inno-va-tion Hap-pen in Gov-ern-ments Around the Wor
+ld\T1/stix/m/n/10.03749 . Nesta. [][]$https : / / www . nesta . org . uk / repo
+rt /
+ []
+
+
+Underfull \hbox (badness 4859) in paragraph at lines 2046--2051
+[][]\T1/stix/m/n/10.03749 Westley, F., S. Laban, C. Rose, K. McGowan, K. Robin-
+son, O. Tjornbo, and M. Tovey. 2015. ``Social Inno-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2046--2051
+\T1/stix/m/n/10.03749 va-tion Lab Guide.'' Water-loo Insti-tute for Social Inno
+-va-tion; Resilience: Water-loo. [][]$https : / / uwaterloo . ca /
+ []
+
+[19]
+No file index.bbl.
+[20] (./index.aux) ) 
 Here is how much of TeX's memory you used:
- 16619 strings out of 480796
- 234507 string characters out of 5903255
- 518369 words of memory out of 5000000
- 33783 multiletter control sequences out of 15000+600000
- 409393 words of font info for 31 fonts, out of 8000000 for 9000
- 40 hyphenation exceptions out of 8191
- 75i,0n,77p,329b,89s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 19367 strings out of 479023
+ 274921 string characters out of 5859412
+ 646342 words of memory out of 5000000
+ 36373 multiletter control sequences out of 15000+600000
+ 505061 words of font info for 135 fonts, out of 8000000 for 9000
+ 1167 hyphenation exceptions out of 8191
+ 86i,10n,88p,2763b,499s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/stix/st
+ix-ts1.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc
+}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<
+/usr/local/texlive/2020/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.pfb
+></usr/local/texlive/2020/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic
+.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/stix/STIXGeneral-Re
+gular.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfss0
+500.pfb>
+Output written on index.pdf (20 pages, 251324 bytes).
+PDF statistics:
+ 675 PDF objects out of 1000 (max. 8388607)
+ 642 compressed objects within 7 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 193 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-!  ==> Fatal error occurred, no output PDF file produced!
