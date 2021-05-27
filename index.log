@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  27 MAY 2021 09:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.20)  27 MAY 2021 11:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1079,58 +1079,93 @@ Overfull \hbox (161.28818pt too wide) has occurred while \output is active
 
 [8] [9
 
-] [10]
+]
+<Figures/Figure 1 - Methodology.png, id=250, 3237.09375pt x 1118.1775pt>
+File: Figures/Figure 1 - Methodology.png Graphic file (type png)
+<use Figures/Figure 1 - Methodology.png>
+Package pdftex.def Info: Figures/Figure 1 - Methodology.png  used on input line
+ 914.
+(pdftex.def)             Requested size: 482.13092pt x 166.52504pt.
+[10 <./Figures/Figure 1 - Methodology.png>] [11]
+<Figures/Figure 2 - Role Framework.png, id=268, 2888.7925pt x 1731.46875pt>
+File: Figures/Figure 2 - Role Framework.png Graphic file (type png)
+<use Figures/Figure 2 - Role Framework.png>
+Package pdftex.def Info: Figures/Figure 2 - Role Framework.png  used on input l
+ine 1238.
+(pdftex.def)             Requested size: 482.13092pt x 288.9561pt.
 LaTeX Font Info:    Trying to load font information for TS1+stix on input line 
-1088.
+1264.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ts1stix.fd
 File: ts1stix.fd 2015/04/17 v1.1.2-latex STIX TS1 font definitions
-) [11] [12] [13] [14] [15] [16]
-Underfull \hbox (badness 4792) in paragraph at lines 1694--1698
+) [12] [13 <./Figures/Figure 2 - Role Framework.png>] [14]
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 1630.
+[15] [16]
+Overfull \hbox (7.15466pt too wide) in alignment at lines 1777--1787
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (7.15466pt too wide) in alignment at lines 1787--1793
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (7.15466pt too wide) in alignment at lines 1793--1912
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (7.15466pt too wide) in alignment at lines 1912--1969
+ [] [] [] [] 
+ []
+
+[17] [18] [19] [20]
+Underfull \hbox (badness 4792) in paragraph at lines 2240--2244
 [][]\T1/stix/m/n/10.03749 Allen, J. P., and R. K. W. Van Der Velden. 2005. ``Th
 e Role of Self-Assessment in Mea-sur-ing Skills,'' Jan-
  []
 
 
-Underfull \hbox (badness 7186) in paragraph at lines 1694--1698
+Underfull \hbox (badness 7186) in paragraph at lines 2240--2244
 \T1/stix/m/n/10.03749 uary, 1--25. [][]$https : / / api . semanticscholar . org
  / CorpusID : 153922219 % 20https : / / cris . maastrichtuniversity . nl / en /
  publications /
  []
 
-[17] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 1963--1968
+[21] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 2509--2514
 [][]\T1/stix/m/n/10.03749 Puttick, Ruth, Peter Baeck, and Philip Col-li-gan. 20
 14. \T1/stix/m/it/10.03749 I-Teams: The Teams and Funds Mak-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1963--1968
+Underfull \hbox (badness 10000) in paragraph at lines 2509--2514
 \T1/stix/m/it/10.03749 ing Inno-va-tion Hap-pen in Gov-ern-ments Around the Wor
 ld\T1/stix/m/n/10.03749 . Nesta. [][]$https : / / www . nesta . org . uk / repo
 rt /
  []
 
 
-Underfull \hbox (badness 4859) in paragraph at lines 2046--2051
+Underfull \hbox (badness 4859) in paragraph at lines 2592--2597
 [][]\T1/stix/m/n/10.03749 Westley, F., S. Laban, C. Rose, K. McGowan, K. Robin-
 son, O. Tjornbo, and M. Tovey. 2015. ``Social Inno-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2046--2051
+Underfull \hbox (badness 10000) in paragraph at lines 2592--2597
 \T1/stix/m/n/10.03749 va-tion Lab Guide.'' Water-loo Insti-tute for Social Inno
 -va-tion; Resilience: Water-loo. [][]$https : / / uwaterloo . ca /
  []
 
-[19]
+[23]
 No file index.bbl.
-[20] (./index.aux) ) 
+[24] (./index.aux) ) 
 Here is how much of TeX's memory you used:
- 19367 strings out of 479023
- 274921 string characters out of 5859412
- 646342 words of memory out of 5000000
- 36373 multiletter control sequences out of 15000+600000
- 505061 words of font info for 135 fonts, out of 8000000 for 9000
+ 19445 strings out of 479023
+ 276431 string characters out of 5859412
+ 652777 words of memory out of 5000000
+ 36437 multiletter control sequences out of 15000+600000
+ 527129 words of font info for 172 fonts, out of 8000000 for 9000
  1167 hyphenation exceptions out of 8191
  86i,10n,88p,2763b,499s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/stix/st
@@ -1141,10 +1176,10 @@ ix-ts1.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc
 .pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/stix/STIXGeneral-Re
 gular.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfss0
 500.pfb>
-Output written on index.pdf (20 pages, 251324 bytes).
+Output written on index.pdf (24 pages, 562538 bytes).
 PDF statistics:
- 675 PDF objects out of 1000 (max. 8388607)
- 642 compressed objects within 7 object streams
- 126 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 705 PDF objects out of 1000 (max. 8388607)
+ 664 compressed objects within 7 object streams
+ 136 named destinations out of 1000 (max. 500000)
+ 203 words of extra memory for PDF output out of 10000 (max. 10000000)
 

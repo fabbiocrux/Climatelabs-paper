@@ -51,11 +51,14 @@ editor_options:
 ---
 
 ```{r, include=FALSE, echo=FALSE}
-knitr::opts_chunk$set(echo = FALSE, fig.retina = 3, message = FALSE, warning = FALSE)
+knitr::opts_chunk$set(echo = FALSE, 
+                      fig.retina = 3, fig.align='center',
+                      message = FALSE, warning = FALSE)
 options(knitr.kable.NA = '')
 
 library(tidyverse)
 library(flextable)
+library(officer)
 ```
 
 # Introduction
@@ -158,9 +161,11 @@ First, based on the literature reviewed, we proposed an adapted role model. Beca
 
 Due to the transcontinental nature of the Climate Labs project, the self-assessment approach was applied virtually by means of the online questionnaire and an online workshop. The proposed approach was designed so that each lab team member (including professors, researchers, students, and administrative staff) could be part of the process. We received a total of 65 answers along with the workshop results for each team. We then analyzed and discussed the results and insights in order to draw conclusions that could be used to provide guidelines for the future of the Climate Labs project but also to further develop this study.
 
-```{r Fig1, fig.cap="Methodology overview"}
-
+```{r Fig1, fig.cap="Methodology overview", out.width='95%' }
+knitr::include_graphics('Figures/Figure 1 - Methodology.png')
 ```
+
+
 
 # Proposition of a competence-based role model for SI Lab teams
 
@@ -168,7 +173,6 @@ Despite several insights from empirical studies and different statements regardi
 
 ```{r table3}
 T2 <- read_csv("Tables/Table_3.csv")
-
 
 T2 %>% flextable() %>% 
   set_caption("Categorization of SI lab team competences") %>%
@@ -181,16 +185,35 @@ T2 %>% flextable() %>%
 Then, in order to gain a finer sense of how to better define these competences for innovation teams and their roles, we compared the four competence categories to the innovation roles found in the literature. At this point, we looked for similarities between the roles and behaviors that were historically recognized among innovation teams and the competences for SI labs. We found that all four categories were present in the seven innovation team role models (see Table 4). It is worth remembering that our focus for this study is the composition of lab teams. This means that while proceeding to this comparison our attention remained focused on the roles at the core of innovation lab management. This is why a fifth category emerges as "external roles", which refer to users or external parties that revolve around the network of lab stakeholders. By no means is our intent to diminish the importance of these roles, on the contrary, we would like to mention that these external roles should definitely be studied in depth at the further stages of the research. However, considering the usually relatively small size of innovation lab teams, especially in the early stages, we believe that these four categories constitute a comprehensive and pragmatic basis for this study.
 
 ```{r table4, fig.cap="Innovation Role Model Comparison"}
+T4 <- read_csv("Tables/Table_4.csv")
+
+
+T4 %>% flextable() %>% 
+  set_caption("Innovation Role Model Comparison") %>%
+  fontsize(size = 9, part = "all") %>% 
+  width(j=c(1,2:6), width = c(1.2, rep(1,5))) %>% 
+  #autofit() %>% 
+  #theme_zebra()
+   #delete_part(part = "header") #%>% 
+  #hline_top(part="all") %>% 
+  #bold(i = 1, j = 1:11, bold = TRUE, part = "header") %>% 
+  #bold(i = seq(1,by=2, len=8), j = 2:11, bold = TRUE, part = "body") %>%
+  #hline( i = seq(1,by=2, len=8), j = 2:11, border = NULL, part = "body") %>% 
+  hline( i = c(2,5, 8,12, 14,19), j = 1:6, border = fp_border(color="gray", width = 0.1),  part = "body") %>% 
+  padding(padding = 1, part = "body")
+  #vline(i = 1:16, j = 1:1, part = "body")
 
 ```
 
-Based on the previous work, we propose a competence-based role model for SI labs (see Figure 2). This model is intended for the establishment of a minimal base of competences and roles that a SI lab team should bear in mind during the implementation of their project. A general description for each of the proposed roles is outlined below.
+Based on the previous work, we propose a competence-based role model for SI labs (see Figure \ref{fig:fig2}). This model is intended for the establishment of a minimal base of competences and roles that a SI lab team should bear in mind during the implementation of their project. A general description for each of the proposed roles is outlined below.
 
-```{r Fig2, fig.cap="Competence-based role model proposition"}
-
+```{r fig2, fig.cap="Competence-based role model proposition", out.width='95%' }
+knitr::include_graphics('Figures/Figure 2 - Role Framework.png')
 ```
 
-### Facilitators -- They who set the tempo and orchestrate people's collaboration
+
+
+## Facilitators -- They who set the tempo and orchestrate people's collaboration
 
 This is probably the most distinctive role in an innovation lab team. The Facilitators are those who set the methodological tempo of the projects within the lab. They know exactly what strategy, tool or dynamics to use when divergence, convergence or a "simple" retrospective is needed. They get people involved and seek collaboration for every activity. When intentions and interests collide, facilitators keep everyone focused on the greater purpose. No collaboration is possible where there is discrimination and exclusion, so intercultural and transdisciplinary inclusion is a prime directive for them. What can be expected of facilitators in a SI lab team:
 
@@ -200,7 +223,7 @@ This is probably the most distinctive role in an innovation lab team. The Facili
 -   Act as peacekeepers when a conflict emerges, maintaining the focus on project objectives and common goals [@Belbin2010; @Hering2005; @Nystrom2014].
 -   Ensure intercultural inclusiveness in all lab projects or activities [@Kelley2005; @Nystrom2014; @Wascher2018].
 
-### Makers -- They who make things happen
+## Makers -- They who make things happen
 
 Whoever comes up with an idea usually needs support to make it become real. Makers leverage a diverse set of instrumental skills to understand every need and to prototype any solution. They do not hesitate to mix disciplines or to go out in the field in order to understand a problem. They shine at combining ideas and driving innovative concepts. Makers are driven by experimentation, iterating through prototypes crafted on available technologies. Acknowledging the complexity of every problem in a systemic manner is part of the way they see the world. What can be expected of makers in a SI lab team:
 
@@ -209,7 +232,7 @@ Whoever comes up with an idea usually needs support to make it become real. Make
 -   Help build physical (and digital) representations of solutions on an iterative basis [@Belbin2010; @Hering2005; @Kelley2005; @Gemunden2007; @Nystrom2014; @Goduscheit2014].
 -   Propose alternatives to address the complexity of every problem and the systemic impact of each solution [@Nystrom2014; @Wascher2018].
 
-### Visionaries -- They who push and connect
+## Visionaries -- They who push and connect
 
 Refers to the type of person who always finds an opportunity where no one else sees it. These are the very same people who know how to easily create networks. They possess an inherent talent for communicating their ideas while remaining empathetic and sensitive to others. Their particular entrepreneurial mindset keeps them moving forward, in view of achieving their vision of the future and beliefs. What can be expected of visionaries in a SI lab team:
 
@@ -218,7 +241,7 @@ Refers to the type of person who always finds an opportunity where no one else s
 -   Create an emotional connection with people around the lab by sharing compelling stories regarding each project, event, success, or failure [@Hering2005; @Kelley2005; @Nystrom2014; @Goduscheit2014].
 -   Go out and find opportunities for the lab whether these are new alliances, funding options or showcase scenarios [@Belbin2010; @Gemunden2007; @Goduscheit2014; @Wascher2018].
 
-### Managers -- They who keep everything on track
+## Managers -- They who keep everything on track
 
 Innovation lab initiatives can often be seen as fuzzy and accessory. Managers are there to organize, give sense and value to everything that happens in a lab. Because they are used to dealing with uncertain conditions, lab managers are exceptionally adept at handling innovation projects. They keep track of everything, detecting patterns of what works and what does not. Their ability to monitor metrics and results allows them to build bridges with their managerial counterparts from other institutions to defend the role of the lab in their ecosystem. Lab managers are capable of making decisions, a key asset in the highly complex contexts in which labs normally operate. What can be expected of managers in a SI lab team:
 
@@ -227,13 +250,22 @@ Innovation lab initiatives can often be seen as fuzzy and accessory. Managers ar
 -   Implement monitoring and assessment mechanisms to track the lab's evolution and communicate results [@Roberts1982; @Belbin2010; @Hering2005].
 -   Have strong belief in themselves which helps them make decisions for the sustainability of the lab and its ecosystem [@Belbin2010; @Gemunden2007; @Wascher2018].
 
-### Tool design: A self-assessment approach
+## Tool design: A self-assessment approach
 
 The next step was to operationalize the proposed role model. Rather than relying entirely on a rationalistic approach where functional roles are predefined and team members are expected to fit into the assumptions, we sought to provide a reflection and awareness tool for lab teams as they design and implement their SI lab [@Sandberg2000]. In this sense, a self-assessment approach is instrumental in understanding the degree to which a person considers they are competent for a determined task or in a specific situation, while reflection processes are sparked [@Sandberg2000; @Allen2005]. An important advantage of following a self-assessment approach is that individuals have access to information about themselves that might otherwise be more difficult to access [@Allen2005]. However, it is also important to be aware that relying on self-knowledge often leads to problems regarding the reliability and validity of results [@Ward2002].
 
 For this reason, the operationalization of our theoretical model first and foremost included the definition of short descriptions for each competence (see Appendix A), which constitute the basis of an online questionnaire as the first step to self-assessment. Accordingly, out of a total of 30 questions in the online questionnaire, 23 questions are directly related to the model criteria, 6 general questions are used for profiling purposes and the last question is an open one to collect feedback. Furthermore, and based on this structure, the questionnaire was also made available in three languages: Spanish, Portuguese and English. In terms of self-assessment levels, a scale from 0 to 5 with anchoring phrases was applied (see Table 5). In this scale, 1 corresponds to the level where respondents understand what the competence is but do not practice it, and 5, where they believe they have mastered the competence and are capable of developing new ways of applying it [@Dreyfus1986]. The 0 level was introduced for people who were not aware of, or did not understand what the competence was about, so as to reduce unintentional measurement errors [@Allen2005]. In order to address any ambiguity or lack of clarity, a test was performed with several members of the consortium, prior to applying the study to the Latin American teams. Adjustments were then made based on the feedback and test results. The English version of the final questionnaire can be accessed at <https://forms.gle/iZ1Lwyt1KUqrerb57>.
 
-```{r table5, fig.cap="Self-assessment scale"}
+```{r table5, }
+
+T5 <- read_csv("Tables/Table_5.csv")
+
+T5 %>% flextable() %>% 
+  set_caption("Self-assessment scale") %>%
+  fontsize(size = 8, part = "all") %>% 
+  #align(i = 1:6, j = 2, align = 'center', part = "body") %>% 
+  width(j=1:3, width = c(1.5, 1, 2)) %>% 
+  theme_zebra() 
 
 ```
 
@@ -249,7 +281,36 @@ The members of each team were asked to self-assess their SI lab competences indi
 
 A total of 65 participants completed both the questionnaire and the workshop. Lab team size oscillated between 4 and 13 members. Among the respondents there were faculty members, administration staff, researchers and students, the latter category being only represented by three undergraduate students and one doctoral student. This was mainly due to the constraints of the global COVID-19 health crisis, with repercussions on each university's academic schedule. Nevertheless, the sample is still representative of who will lead lab implementation, which guarantees that insights drawn from this analysis will provide a real picture of a SI lab team in its early stages. Table 6 summarizes team composition by university.
 
-```{r table6, fig.cap="Lab team composition and thematic focus"}
+```{r table6 }
+T6 <- read_csv("Tables/Table_6.csv")
+
+T6 %>% flextable() %>% #theme_booktabs(x, bold_header = TRUE) %>% 
+  set_caption("Lab team composition and thematic focus") %>%
+  fontsize(size = 8, part = "all") %>% 
+  add_header_row( values = c("", "Members by Position", ""), colwidths = c(2,7,2)) %>% 
+  border_inner(fp_border(color = "#e3e3e3", style = "solid", width = 0.1)) %>% 
+  width(j=c(1,2, 3:9,10, 11), width = c(0.8,0.4, rep(0.3,7), 0.5, 2)) %>% 
+  merge_v( j = c("Country")) %>% 
+ footnote(
+  i = 2,
+  j = 3:9,
+  value = as_paragraph(
+              c("PR: Professor",
+                "AP: Assistant Professor",
+                "DI: Director",
+                "AS: Administrative Staff",
+                "RE: Researcher",
+                "ST: Student",
+                "OT: Other")
+            ),
+  ref_symbols = c("", "", "", "", "", "", ""),
+  part = "header",
+  inline = TRUE,
+  sep = "; "
+) %>% 
+  align(align = "left", part = "all")
+  
+
 
 ```
 
@@ -269,7 +330,20 @@ Figure 3 presents the results of the self-assessment for the whole sample (black
 
 Based on the results of the self-assessment, the lab teams were invited to reflect on their competence profile while the role model was introduced along with the workshop steps. Due to space limitations, the results of the second part are described through three cases: Labs H, I and J. These cases were chosen because as a result of the self-assessment, they showed a lack or a low representation of the specific roles among their team members. This allows us to frame the analysis in terms of what conceptions the methodology elicits when specific roles are missing. A cross-case analysis is then conducted to discuss noteworthy observations and common elements in the way lab teams interpret results, self-positioning and what kind of actions or points of improvement were identified. Table 7 presents a summary of the retrospective results for the three chosen cases. We focused on analyzing and understanding how participants related to our role model and which self-declared roles emerged for each case. We were also interested in exploring how consistent (or not) the competence profile results were with the self-declared roles, as well as with the identified improvement actions. For instance, do teams lacking a specific role propose equivalent actions to fill that gap? Besides hiring or involving new people in the team, what other reflections or improvement strategies does the methodology elicit? With these questions in mind, we discuss some of the main insights in the rest of this section.
 
-```{r table7, fig.cap= "Summarized results of retrospective"}
+```{r table7 , ft.arraystretch = 1}
+
+T7 <- read_csv("Tables/Table_7.csv")
+
+T7 %>% flextable() %>% theme_booktabs(x, bold_header = TRUE) %>% 
+  set_caption("Summarized results of retrospective") %>%
+  bold(i = 1:29, j = 1, bold = TRUE, part = "body") %>% 
+  hline(i = c(4,12,17,20), j = 1:4, part="body") %>% 
+  fontsize(size = 8, part = "all") %>% 
+  width(j=c(1,2,3,4), width = c(0.9,rep(2,3))) %>% 
+  align(align = "left", part = "all") %>% 
+  #merge_v( j = c("Retrospective Steps")) %>% 
+  padding(padding = '0.2', part = "all")
+  
 
 ```
 
