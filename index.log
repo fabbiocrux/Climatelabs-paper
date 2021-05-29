@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.29)  29 MAY 2021 17:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.29)  29 MAY 2021 17:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1332,7 +1332,7 @@ No file index.bbl.
 Here is how much of TeX's memory you used:
  19469 strings out of 480714
  283419 string characters out of 5901854
- 639592 words of memory out of 5000000
+ 639564 words of memory out of 5000000
  36451 multiletter control sequences out of 15000+600000
  527129 words of font info for 172 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
@@ -1345,7 +1345,7 @@ ec/ecss0500.600pk><c:/Users/fob11/AppData/Roaming/TinyTeX/texmf-dist/fonts/type
 1/public/stix/STIXGeneral-Bold.pfb><c:/Users/fob11/AppData/Roaming/TinyTeX/texm
 f-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb><c:/Users/fob11/AppData/R
 oaming/TinyTeX/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb>
-Output written on index.pdf (26 pages, 589829 bytes).
+Output written on index.pdf (26 pages, 589788 bytes).
 PDF statistics:
  760 PDF objects out of 1000 (max. 8388607)
  703 compressed objects within 8 object streams
