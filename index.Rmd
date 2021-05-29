@@ -1,5 +1,5 @@
 ---
-title: 'Exploring team roles for social innovation labs: toward a competence-based
+title: 'Exploring team roles for social innovation labs: Toward a competence-based
   self-assessment approach'
 author:
 - name: Ferney Osorio*
@@ -7,10 +7,13 @@ author:
   num: ERPI,UN
 - name: Fabio A. Cruz Sanchez
   num: ERPI
-- name: Laurent Dupont
-  num: ERPI
 - name: Mauricio Camargo
   num: ERPI
+- name: Laurent Dupont
+  num: ERPI
+- name: José Ismael Peña
+  num: UN
+
 classoption: APA,STIX2COL
 output:
   # html_document:
@@ -18,14 +21,14 @@ output:
   pdf_document:
     template: template-Wiley.tex
     keep_tex: yes
-corres: '*Corresponding author name, This is sample corresponding address. \email{authorone@gmail.com}'
-presentaddress: This is sample for present address text this is sample for present
-  address text
+corres: 'Ferney Osorio, Université de Lorraine - ERPI -F-54000, Nancy, France. \email{ferney.osorio-bustamante@univ-lorraine.fr}'
+#presentaddress: This is sample for present address text this is sample for present
+#  address text
 authormark: Uthor \emph{et al}.
 articletype: Research article
-received: '2017-01-01'
-revised: '2017-02-01'
-accepted: '2017-03-01'
+received: '20XX-XX-XX'
+revised: '20XX-XX-XX'
+accepted: '20XX-XX-XX'
 abstract: |
   Recently, there has been a great interest in the development of innovation labs as intermediate means to fostering social innovative solutions to complex problems. However, the composition of innovation lab teams, including the underlying competences and main roles within such organizational structures has yet to be understood. This aspect is of paramount importance at the early designing phase to foster the future development and consolidation of such initiatives. A competence-based role model is proposed as a basis for guiding the conformation of social innovation lab teams. The structure of the model is grounded on (1) a set of 14 competences for social innovation labs drawn from the literature, (2) a comparison of 7 frameworks of innovation team roles and (3) the authors' experience. The model we propose is then operationalized using a self-assessment approach, which consists of an online questionnaire and a retrospective workshop to help team members position themselves in terms of the potential role they could play within their team, but also to elicit improvement strategies. The self-assessment methodology is then applied to 10 Latin American nascent social innovation lab teams with a focus on climate change challenges. Finally, we discuss the insights and implications of this exploratory study for both researchers and practitioners.
 journal: Creativity and Innovation Management
@@ -123,6 +126,10 @@ One of the earliest innovation role models is the one proposed by [@Roberts1982]
 
 More recently, @Hering2005 present eight innovation roles, placing emphasis on the ones required for a generic innovation process. The authors detailed the features of what can be expected of these roles, rather than just titles or job descriptions. According to them, *connector*, *librarian*, *framer*, *judge*, *prototyper*, *monitor* and *storyteller* are the roles that should be sought when putting together an innovation team. The organization's commitment and a belief system are also deemed critical to creating the time and the resources necessary for innovation teams to deal with the uncertainty pertaining to any innovation process. Alternatively, @Kelley2005 published *Ten Faces of Innovation* based on their experiences at IDEO. The book presents ten descriptions of condensed persona meant to inspire which roles members of an organization should play to foster creativity and innovation. They consider that each role or persona helps bring specific values, tools, skills to the table, and therefore that it is important to ensure they are present in any innovation team. These ten roles are grouped by *learners* (anthropologist, experimenter and cross-pollinator), *organizers* (hurdler, collaborator and director) and *builders* (experience architect, set designer, caregiver and storyteller).
 
+Based on 104 interviews with representatives of German companies and 42 cases from questionnaires, @Gemunden2007 propose a model to determine whether certain innovation roles are influential in adding to the success of new product development in the context of increasingly open innovation. They point out that not only innovation and technological experts are required (*expert promoter* and *process promoter*), but strong leadership (*project leader*) as well as good external relationships (*technology and market relationships promoters*). Moreover, they emphasize the importance of institutional support in the form of power promoters. Recently, [@Goduscheit2014] endeavored to build on the work initiated by [@Gemunden2007]. There, he seeks to further develop the concept of innovation promoters. This notion is based on the idea that innovation teams are meant to overcome the barriers and difficulties to successful innovations. His aim is to explore the interorganizational dimension between the innovation roles proposed by [@Gemunden2007] by analyzing how they interact/perform with/within multiple organizations. As a result, he further develops the innovation promoter model by moving from the original six roles to a proposition with nine roles: *seniority*, *top-level representative*, *technological expert*, *methodology expert*, *intra-organizational process*, *inter-organizational process*, *project process*, *technology relationship* and *market relationship*.
+
+Finally, we refer to the very interesting work conducted by [@Nystrom2014]. These authors also build on the research work of [@Gemunden2007] by analyzing the roles needed in the context of open innovations. However, they center their research on the possible influence of such roles on innovation networks. For this, they studied 26 living labs and came up with a final proposition of 17 roles that network actors can adopt or create for an innovation project. The new roles identified are mostly related to users and the facilitators (e.g., *co-creator*, *orchestrator*, *contributor*), which correspond to living lab approaches encouraging multi-stakeholder engagement. They also state the importance of innovation roles to combine multiple perspectives, due to the increasing complexity of innovation projects. This in particular relates to the more systemic and transdisciplinary approach that is required for SI projects.
+
 ```{=tex}
 \newpage
 \blandscape
@@ -137,7 +144,7 @@ T2 %>% flextable() %>%
    delete_part(part = "header") %>% 
   add_header_row( values = c("References","Innovation team roles studied over the years"), colwidths = c(1,10)) %>% 
   hline_top(part="all") %>% 
-  #set_caption("SI Lab list of competences retrieved from Wascher et al., (2018)") %>%
+  set_caption("Role models of innovation teams over the years") %>%
   fontsize(size = 8) %>% 
   bold(i = 1, j = 1:11, bold = TRUE, part = "header") %>% 
   bold(i = seq(1,by=2, len=8), j = 2:11, bold = TRUE, part = "body") %>%
@@ -151,21 +158,18 @@ T2 %>% flextable() %>%
 \elandscape
 \newpage
 ```
-Based on 104 interviews with representatives of German companies and 42 cases from questionnaires, @Gemunden2007 propose a model to determine whether certain innovation roles are influential in adding to the success of new product development in the context of increasingly open innovation. They point out that not only innovation and technological experts are required (*expert promoter* and *process promoter*), but strong leadership (*project leader*) as well as good external relationships (*technology and market relationships promoters*). Moreover, they emphasize the importance of institutional support in the form of power promoters. Recently, [@Goduscheit2014] endeavored to build on the work initiated by [@Gemunden2007]. There, he seeks to further develop the concept of innovation promoters. This notion is based on the idea that innovation teams are meant to overcome the barriers and difficulties to successful innovations. His aim is to explore the interorganizational dimension between the innovation roles proposed by [@Gemunden2007] by analyzing how they interact/perform with/within multiple organizations. As a result, he further develops the innovation promoter model by moving from the original six roles to a proposition with nine roles: *seniority*, *top-level representative*, *technological expert*, *methodology expert*, *intra-organizational process*, *inter-organizational process*, *project process*, *technology relationship* and *market relationship*.
-
-Finally, we refer to the very interesting work conducted by [@Nystrom2014]. These authors also build on the research work of [@Gemunden2007] by analyzing the roles needed in the context of open innovations. However, they center their research on the possible influence of such roles on innovation networks. For this, they studied 26 living labs and came up with a final proposition of 17 roles that network actors can adopt or create for an innovation project. The new roles identified are mostly related to users and the facilitators (e.g., *co-creator*, *orchestrator*, *contributor*), which correspond to living lab approaches encouraging multi-stakeholder engagement. They also state the importance of innovation roles to combine multiple perspectives, due to the increasing complexity of innovation projects. This in particular relates to the more systemic and transdisciplinary approach that is required for SI projects.
 
 Throughout this review of the literature, one may observe that despite the diversity of perspectives, processes or names, authors agree that imbalanced teams and frequent changes can disrupt the way an innovation team performs. This is a challenge that should definitely be taken into consideration when setting up an innovation lab. However, none of the role models establish a direct link between the proposed roles and the relevant competences needed for a person to adequately fill these roles. Nor are any of the identified studies developed in a SI context. These elements are taken into account in the next section dealing with the proposition of this article.
 
 # Methodology
 
-Throughout the theoretical background presented above, we have explored the principles behind the notion of SI labs, along with the dynamics that lab teams must deal with in such contexts. Several questions arose as to which roles would allow a SI lab team to be better prepared to accomplish their mission, as well as what set of competences would be necessary for these teams to thrive under such conditions. Accordingly, seven innovation role models were retrieved from the literature on innovation teams, as well as a set of 14 key competences for SI lab teams. However, because of the lack of research work on the performance of innovation lab managerial teams, and more specifically on teams in the SI context, through this study we aim to establish a connection between innovation competence theory and actual innovation teams in order to hypothesize the essential elements that should be considered when putting together a SI lab team. To this end, we designed a four-stage process, as shown in Figure 1.
+Throughout the theoretical background presented above, we have explored the principles behind the notion of SI labs, along with the dynamics that lab teams must deal with in such contexts. Several questions arose as to which roles would allow a SI lab team to be better prepared to accomplish their mission, as well as what set of competences would be necessary for these teams to thrive under such conditions. Accordingly, seven innovation role models were retrieved from the literature on innovation teams, as well as a set of 14 key competences for SI lab teams. However, because of the lack of research work on the performance of innovation lab managerial teams, and more specifically on teams in the SI context, through this study we aim to establish a connection between innovation competence theory and actual innovation teams in order to hypothesize the essential elements that should be considered when putting together a SI lab team. To this end, we designed a four-stage process, as shown in Figure \ref{fig:fig1}.
 
 First, based on the literature reviewed, we proposed an adapted role model. Because none of the previous role models for innovation teams are rooted either in SI or in innovation labs, our aim was to use the 14 identified competences to establish a model proposition adapted to the context of our research. Following this, the model proposed was defined operationally as an assessment tool (online questionnaire) that was ultimately applied using a self-assessment approach. Given the practical motivation behind this exploratory study, which is to assist 10 Latin American university teams in setting up their own SI lab team in the framework of the Erasmus+ Climate Labs project, we opted for a self-assessment twin-track approach. The first goal was to use this approach to trigger reflection processes that would allow the university teams to increase their awareness of their actual position with respect to the expected roles. And the second goal was to have a comprehensive role characterization at the early stage of the project, for every lab team and according to their perception of the degree of mastery of the identified competences.
 
 Due to the transcontinental nature of the Climate Labs project, the self-assessment approach was applied virtually by means of the online questionnaire and an online workshop. The proposed approach was designed so that each lab team member (including professors, researchers, students, and administrative staff) could be part of the process. We received a total of 65 answers along with the workshop results for each team. We then analyzed and discussed the results and insights in order to draw conclusions that could be used to provide guidelines for the future of the Climate Labs project but also to further develop this study.
 
-```{r Fig1, fig.cap="Methodology overview", out.width='95%' }
+```{r fig1, fig.cap="Methodology overview", out.width='95%', fig.pos='b' }
 knitr::include_graphics('Figures/Figure 1 - Methodology.png')
 ```
 
@@ -180,7 +184,8 @@ T2 %>% flextable() %>%
   set_caption("Categorization of SI lab team competences") %>%
   fontsize(size = 8, part = "all") %>% 
   width(j=1:5, width = c(1, .8, .8, .8, .8)) %>% 
-  theme_zebra() 
+  theme_zebra()
+  
   
 ```
 
@@ -209,7 +214,7 @@ T4 %>% flextable() %>%
 
 Based on the previous work, we propose a competence-based role model for SI labs (see Figure \ref{fig:fig2}). This model is intended for the establishment of a minimal base of competences and roles that a SI lab team should bear in mind during the implementation of their project. A general description for each of the proposed roles is outlined below.
 
-```{r fig2, fig.cap="Competence-based role model proposition", out.width='95%' }
+```{r fig2, fig.cap="Competence-based role model proposition", out.width='95%', fig.pos='b' }
 knitr::include_graphics('Figures/Figure 2 - Role Framework.png')
 ```
 
@@ -320,9 +325,9 @@ There is interest in measuring the consistency of the tool. To do so, we chose t
 
 ## Competence self-assessment results
 
-Figure 3 presents the results of the self-assessment for the whole sample (black line). Three additional profiles are shown (green, blue and orange dotted lines) which correspond to the three lab team cases that will be analyzed further in this section. Here, the radar is used to visualize the median-based profiles to provide a measure of the central trend among the sample (or specific team). The median is shown for each of the 23 questions to help the teams infer where strengths or weaknesses might be. From a general perspective, some points are worth describing. The overall sample of participants declared having a high level of competence for guiding others (level 4) in activities such as moderation, research methods, networking and self-organization. This was to be expected as there is a significant number of professors and directors among the respondents, who are probably more trained and experienced than team members holding different positions. However, one result worth highlighting is the low level of competence in ICT and entrepreneurial thinking, suggesting the existence of common gaps that could pose challenges for the future development of a SI lab.
+Figure \ref{fig:fig3} presents the results of the self-assessment for the whole sample (black line). Three additional profiles are shown (green, blue and orange dotted lines) which correspond to the three lab team cases that will be analyzed further in this section. Here, the radar is used to visualize the median-based profiles to provide a measure of the central trend among the sample (or specific team). The median is shown for each of the 23 questions to help the teams infer where strengths or weaknesses might be. From a general perspective, some points are worth describing. The overall sample of participants declared having a high level of competence for guiding others (level 4) in activities such as moderation, research methods, networking and self-organization. This was to be expected as there is a significant number of professors and directors among the respondents, who are probably more trained and experienced than team members holding different positions. However, one result worth highlighting is the low level of competence in ICT and entrepreneurial thinking, suggesting the existence of common gaps that could pose challenges for the future development of a SI lab.
 
-```{r Fig3, fig.cap="Global profile based on results from competence self-assessment"}
+```{r fig3, fig.cap="Global profile based on results from competence self-assessment", fig.pos='b'}
 
 # ------- figure- ---
 fig3 <- readxl::read_excel("data/Data-competences-onlyradar.xlsx")
@@ -355,16 +360,16 @@ Climatelabs %>% filter(Profile %in% c(labs[1], labs[12:14])) %>%
   #facet_wrap(vars(Country) ~ vars(Profile)) + 
   #facet_grid( cols = vars(Profile) , scales ="free_y")  +
   theme_minimal() +
-  ggplot2::annotate("rect", xmin=c(1,8,13,19), xmax=c(7,12,19,23), 
-                           ymin=rep(1,4), ymax=rep(6, 4), 
-                           alpha = .1 , fill = c("blue", "red", "grey","green")) +
+  ggplot2::annotate("rect", xmin=c(1,8,13,19), xmax=c(7,12,18,23), 
+                           ymin=rep(5.5,4), ymax=rep(6, 4), 
+                           alpha = .1 , fill = c("green", "orange", "purple","blue")) +
   ggplot2::annotate("text",
-                           x = c(3, 9, 15,21),
-                           y = rep(6, 4),
+                           x = c(4, 10, 15,21),
+                           y = rep(5.75, 4),
                            label = c("Facilitator","Maker", "Visionary", "Manager"),
                            family = "Palatino", fontface = 3, size=4) +
-  scale_y_continuous(breaks=c(1,2,3,4,5), labels=c("(Novate) 1", "2","(Competent) 3", "4", "(Expert) 5")) +
-  scale_color_manual(values=c('#F8766D','#7CAE00', '#00BFC4', 'black')) +
+  scale_y_continuous(breaks=c(1,2,3,4,5), labels=c("(Novice) 1", "2","(Competent) 3", "4", "(Expert) 5")) +
+  scale_color_manual(values=c('#307e12','#2a5fc0', '#f47834', 'black')) +
    theme(
      plot.background = element_rect(fill = "#f9fbfc"),
      axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)
@@ -443,17 +448,16 @@ This work is part of the Climate Labs Project co-financed by the European Commis
 
 <div id="refs"></div>
 
-
 \appendix
 
-# Annex 1
+# Role model operationalization {.unnumbered}
 
 ```{r}
 
-A1 <- read_csv("Tables/Appendix_A.csv")
+A <- read_csv("Tables/Appendix_A.csv")
 
-A1 %>% flextable() %>% theme_booktabs(x, bold_header = TRUE)  %>% 
-  set_caption("Operationalization of the framework") %>%
+A %>% flextable() %>% theme_booktabs(x, bold_header = TRUE)  %>% 
+#  set_caption("Role model operationalization") %>%
 #  bold(i = 1:29, j = 1, bold = TRUE, part = "body") %>% 
 #  hline(i = c(4,12,17,20), j = 1:4, part="body") %>% 
 #  fontsize(size = 8, part = "all") %>% 
@@ -464,27 +468,27 @@ A1 %>% flextable() %>% theme_booktabs(x, bold_header = TRUE)  %>%
 
 ```
 
+\newpage
 
-# Annex 2
+# Self-assessment results for the 10 lab teams {.unnumbered}
 
-Total of the results
 
-```{r, fig.height=12, fig.width=6, out.width='50%'}
+```{r, fig.height=14, fig.width=8, out.width='70%'}
 # ------- figure- ---
-fig3 <- readxl::read_excel("data/Data-competences-onlyradar.xlsx")
+figb <- readxl::read_excel("data/Data-competences-onlyradar.xlsx")
 #names(fig3)
-labs <- fig3 %>% pull(Profile) 
+labs <- figb %>% pull(Profile) 
 
 
 
 Climatelabs <- 
-  fig3 %>% filter(Profile %in% labs[5:14]) %>% 
+  figb %>% filter(Profile %in% labs[5:14]) %>% 
   mutate(Country = c(rep("Colombia",5), rep("Brazil",3), rep("Mexico",2))) %>% 
   select(Country, Profile, Medi.1:Eval.1) %>% 
   pivot_longer(cols = Medi.1:Eval.1 )
   
 
-Climatelabs_bg <- fig3 %>% filter(Profile %in% labs[5:14]) %>% 
+Climatelabs_bg <- figb %>% filter(Profile %in% labs[5:14]) %>% 
   mutate(Country = c(rep("Colombia",5), rep("Brazil",3), rep("Mexico",2))) %>% 
   select(Country, Profile, Medi.1:Eval.1) %>% 
   pivot_longer(cols = Medi.1:Eval.1 ) %>% 
